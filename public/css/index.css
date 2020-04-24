@@ -1,3 +1,502 @@
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap");
+#content {
+  width: 1300px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 70px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: initial;
+  align-items: initial;
+}
+#content #contentMain {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: initial;
+  width: 100%;
+}
+#content #contentMain #contentLeft {
+  width: 690px;
+  display: flex;
+  flex-direction: column;
+  justify-content: initial;
+  align-items: initial;
+}
+#content #contentMain #contentLeft #contantHero {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: initial;
+  margin-bottom: 60px;
+}
+#content #contentMain #contentLeft #contantHero * {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  text-transform: capitalize;
+}
+#content #contentMain #contentLeft #contantHero h1 {
+  color: #2D2D2D;
+  font-size: 45px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+#content #contentMain #contentLeft #contantHero h2 {
+  font-size: 36px;
+  font-weight: 400;
+  color: #535353;
+}
+#content #contentMain #contentLeft #contantHero h2 .contantHeroUnderline {
+  border-bottom: 3px solid #FFC000;
+}
+#content #contentMain #contentLeft #contantHero h2 .contantHeroHighlite {
+  font-weight: 500;
+  color: #FFC000;
+}
+#content #contentMain #contentLeft #contentSearch {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: initial;
+}
+#content #contentMain #contentLeft #contentSearch .contentSearchTitle {
+  font-family: "Roboto", sans-serif;
+  color: #2D2D2D;
+  font-size: 24px;
+  font-weight: 500;
+  margin: 0;
+  margin-bottom: 10px;
+}
+#content #contentMain #contentLeft #contentSearch #searchBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: initial;
+  align-items: initial;
+}
+#content #contentMain #contentLeft #contentSearch #searchBar .searchMenuSelect {
+  box-sizing: border-box;
+  padding: 0 10px;
+  margin: 0;
+  width: 210px;
+  height: 60px;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: italic;
+  color: #868686;
+  border: 1px solid #F4F4F4;
+  background-color: #FDFDFD;
+  cursor: pointer;
+}
+#content #contentMain #contentLeft #contentSearch #searchBar #searchMenuBtn {
+  width: 210px;
+  height: 60px;
+  background-color: #FFC000;
+  border: 1px solid #F0B500;
+  border-bottom-width: 4px;
+  cursor: pointer;
+}
+#content #contentMain #contentLeft #contentSearch #searchBar #searchMenuBtn span {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+}
+#content #contentMain #contentLeft #contentSearch #searchBar #searchMenuBtn svg {
+  margin-left: 7px;
+}
+#content #contentMain #contentLeft #contentTrending {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: initial;
+  align-items: center;
+}
+#content #contentMain #contentLeft #contentTrending h6 {
+  font-family: "Roboto", sans-serif;
+  font-size: 11px;
+  color: #535353;
+  font-weight: 500;
+  margin: 0;
+  margin-right: 8px;
+}
+#content #contentMain #contentLeft #contentTrending #contentTrendingCont {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+}
+#content #contentMain #contentLeft #contentTrending #contentTrendingCont .contentTrendingTopic {
+  flex: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 10px;
+  color: #868686;
+  font-weight: 400;
+  font-style: italic;
+  padding: 3px 6px;
+  border: 1px solid #E9E9E9;
+  background-color: #FDFDFD;
+  border-radius: 9999px;
+}
+#content #contentMain #contentLeft #contentTrending #contentTrendingCont .contentTrendingTopic:not(:last-child) {
+  margin-right: 5px;
+}
+#content #contentMain #contentLeft #contentStatistics {
+  margin-top: 222px;
+  display: flex;
+  flex-direction: column;
+  justify-content: initial;
+  align-items: initial;
+}
+#content #contentMain #contentLeft #contentStatistics h3 {
+  color: #535353;
+  font-size: 24px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  margin: 0;
+  margin-bottom: 18px;
+}
+#content #contentMain #contentLeft #contentStatistics #contentStatisticsCont {
+  display: flex;
+  flex-direction: row;
+  justify-content: initial;
+  align-items: center;
+}
+#content #contentMain #contentLeft #contentStatistics #contentStatisticsCont .contentStatisticsItem {
+  display: flex;
+  flex-direction: row;
+  justify-content: initial;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+}
+#content #contentMain #contentLeft #contentStatistics #contentStatisticsCont .contentStatisticsItem .contentStatisticsItemNumber {
+  padding: 2px 5px;
+  background-color: #FFC000;
+  font-weight: 700;
+  color: #fff;
+  margin-right: 5px;
+}
+#content #contentMain #contentLeft #contentStatistics #contentStatisticsCont .contentStatisticsItem .contentStatisticsItemTxt {
+  color: #535353;
+  font-weight: 400;
+}
+#content #contentMain #contentLeft #contentStatistics #contentStatisticsCont .contentStatisticsItem:not(:last-child) {
+  margin-right: 24px;
+}
+#content #contentMain #contentLeft #contentDiscover {
+  margin-top: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: initial;
+  width: 629px;
+}
+#content #contentMain #contentLeft #contentDiscover h3 {
+  font-family: "Roboto", sans-serif;
+  color: #535353;
+  font-size: 24px;
+  font-weight: 500;
+  margin: 0;
+  margin-bottom: 18px;
+}
+#content #contentMain #contentLeft #contentDiscover #contentDiscoverCont {
+  display: flex;
+  flex-direction: row;
+  justify-content: initial;
+  align-items: initial;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+#content #contentMain #contentLeft #contentDiscover #contentDiscoverCont::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);
+}
+#content #contentMain #contentLeft #contentDiscover #contentDiscoverCont .contentDiscoverElement {
+  flex: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: initial;
+  align-items: initial;
+  width: 330px;
+  height: 110px;
+  border: 1px solid #F4F4F4;
+}
+#content #contentMain #contentLeft #contentDiscover #contentDiscoverCont .contentDiscoverElement:not(:last-child) {
+  margin-right: 30px;
+}
+#content #contentMain #contentLeft #contentDiscover #contentDiscoverCont .contentDiscoverElement .contentDiscoverElementPreview {
+  flex: none;
+  width: 110px;
+  height: 110px;
+  position: relative;
+}
+#content #contentMain #contentLeft #contentDiscover #contentDiscoverCont .contentDiscoverElement .contentDiscoverElementPreview img {
+  width: 100%;
+}
+#content #contentMain #contentLeft #contentDiscover #contentDiscoverCont .contentDiscoverElement .contentDiscoverElementPreview::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 191, 0, 0.2);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+#content #contentMain #contentLeft #contentDiscover #contentDiscoverCont .contentDiscoverElement .contentDiscoverElementTxt {
+  display: flex;
+  flex-direction: column;
+  justify-content: initial;
+  align-items: initial;
+  background-color: #FDFDFD;
+  box-sizing: border-box;
+  padding: 10px;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: #535353;
+}
+#content #contentMain #contentLeft #contentDiscover #contentDiscoverCont .contentDiscoverElement .contentDiscoverElementTxt h6 {
+  flex: none;
+  margin: 0;
+  font-weight: 700;
+  margin-bottom: 5px;
+  font-size: inherit;
+  text-transform: capitalize;
+}
+#content #contentMain #contentLeft #contentDiscover #contentDiscoverCont .contentDiscoverElement .contentDiscoverElementTxt span {
+  flex: 1;
+  overflow: hidden;
+  font-weight: 500;
+}
+#content #contentMain #contentLeft #contentDiscover #contentDiscoverNavigation {
+  margin-top: 5px;
+  align-self: flex-end;
+  display: flex;
+  flex-direction: row;
+  justify-content: initial;
+  align-items: initial;
+}
+#content #contentMain #contentLeft #contentDiscover #contentDiscoverNavigation .contentDiscoverNavigationDot {
+  flex: none;
+  width: 8px;
+  height: 8px;
+  background-color: #E9E9E9;
+  border-radius: 9999px;
+}
+#content #contentMain #contentLeft #contentDiscover #contentDiscoverNavigation .contentDiscoverNavigationDot:not(:last-child) {
+  margin-right: 3px;
+}
+#content #contentMain #contentLeft #contentDiscover #contentDiscoverNavigation .NavigationDotActive {
+  background-color: #FFC000;
+}
+#content #contentMain #contentRight {
+  width: fit-content;
+  max-width: 555px;
+  display: flex;
+  flex-direction: row;
+  justify-content: initial;
+  align-items: initial;
+  flex-wrap: wrap;
+}
+#content #contentMain #contentRight .contentRightFeatured {
+  width: 265px;
+  height: 265px;
+  border: 1px solid #F4F4F4;
+  display: flex;
+  flex-direction: column;
+  justify-content: initial;
+  align-items: initial;
+  transition: box-shadow 100ms ease-in-out;
+  cursor: pointer;
+}
+#content #contentMain #contentRight .contentRightFeatured:hover {
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
+}
+#content #contentMain #contentRight .contentRightFeatured:not(:last-child) {
+  margin-right: 20px;
+}
+#content #contentMain #contentRight .contentRightFeatured:nth-child(even) {
+  margin-right: 0;
+}
+#content #contentMain #contentRight .contentRightFeatured:nth-child(+n+3) {
+  margin-top: 20px;
+}
+#content #contentMain #contentRight .contentRightFeatured .contentRightFeaturedPreview {
+  flex: none;
+  width: 265px;
+  height: 215px;
+  position: relative;
+}
+#content #contentMain #contentRight .contentRightFeatured .contentRightFeaturedPreview img {
+  width: 100%;
+}
+#content #contentMain #contentRight .contentRightFeatured .contentRightFeaturedPreview::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 191, 0, 0.2);
+}
+#content #contentMain #contentRight .contentRightFeatured .contentRightFeaturedText {
+  z-index: 2;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: initial;
+  width: 100%;
+  background-color: #FDFDFD;
+  box-sizing: border-box;
+  overflow: hidden;
+  padding: 7px 15px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  text-transform: capitalize;
+  cursor: text;
+}
+#content #contentMain #contentRight .contentRightFeatured .contentRightFeaturedText .contentRightFeaturedName {
+  font-size: 18px;
+  color: #FFC000;
+}
+#content #contentMain #contentRight .contentRightFeatured .contentRightFeaturedText .contentRightFeaturedProf {
+  font-size: 14px;
+  color: #F0B500;
+}
+#content #contentMain #contentRight .contentRightFeatured #contentRightFeaturedMore {
+  flex: none;
+  width: 265px;
+  height: 215px;
+  background-color: #FFC000;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../icon/more.svg");
+}
+#content #contentRecent {
+  margin-top: 78px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: initial;
+}
+#content #contentRecent h3 {
+  font-family: "Roboto", sans-serif;
+  color: #535353;
+  font-weight: 500;
+  font-size: 24px;
+  margin: 0;
+  margin-bottom: 20px;
+}
+#content #contentRecent #contentRecentCont {
+  width: 1300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: initial;
+}
+#content #contentRecent #contentRecentCont .contentRecentItem {
+  width: 225px;
+  height: 225px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+#content #contentRecent #contentRecentCont .contentRecentItem::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(255, 192, 0, 0.65) 0%, rgba(196, 196, 196, 0) 100%);
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+#content #contentRecent #contentRecentCont .contentRecentItem .contentRecentItemInfo {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: initial;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 5px;
+  z-index: 3;
+  position: relative;
+  z-index: 2;
+}
+#content #contentRecent #contentRecentCont .contentRecentItem .contentRecentItemInfo .contentRecentItemPreview {
+  width: 45px;
+  height: 45px;
+  border-radius: 9999px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #FFC000;
+}
+#content #contentRecent #contentRecentCont .contentRecentItem .contentRecentItemInfo .contentRecentItemTxt {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  margin-left: 10px;
+}
+#content #contentRecent #contentRecentCont .contentRecentItem .contentRecentItemInfo .contentRecentItemTxt .contentRecentItemTitle {
+  font-size: 14px;
+  color: #F4F4F4;
+}
+#content #contentRecent #contentRecentCont .contentRecentItem .contentRecentItemInfo .contentRecentItemTxt .contentRecentItemProff {
+  font-size: 12px;
+  color: #E9E9E9;
+}
+#content #contentTrust {
+  margin-top: 86px;
+  display: flex;
+  flex-direction: column;
+  justify-content: initial;
+  align-items: center;
+}
+#content #contentTrust h3 {
+  font-family: "Roboto", sans-serif;
+  color: #535353;
+  font-weight: 500;
+  font-size: 24px;
+  margin: 0;
+}
+#content #contentTrust #contentTrustCont {
+  margin-top: 40px;
+  align-self: center;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: initial;
+}
+#content #contentTrust #contentTrustCont .contentTrustItem {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  padding: 15px 50px;
+  background-color: #F4F4F4;
+  font-size: 18px;
+  color: #535353;
+  font-weight: 500;
+  border-radius: 5px;
+}
 
 /*# sourceMappingURL=index.css.map */

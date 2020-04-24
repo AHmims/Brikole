@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap");
+html,
+body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+#navBarCont {
+  width: 100%;
+  height: 70px;
+  background-color: #FDFDFD;
+  border-bottom: 1px solid #F4F4F4;
+  display: flex;
+  flex-direction: row;
+  justify-content: initial;
+  align-items: center;
+}
+#navBarCont #navBar {
+  width: 1300px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+#navBarCont #navBar #navBarLinks {
+  display: flex;
+  flex-direction: row;
+  justify-content: initial;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#navBarCont #navBar #navBarLinks .navBarLink {
+  margin: 0 5px;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: #2D2D2D;
+  font-weight: 500;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+#navBarCont #navBar #navBarLinks .navBarLink::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 3px;
+  background: #FFC000;
+  transition: width 200ms;
+}
+#navBarCont #navBar #navBarLinks .navBarLink:hover::after {
+  width: 100%;
+}
+#navBarCont #navBar #navBarLinks .navBarButton {
+  color: #fff;
+  background-color: #FFC000;
+  padding: 7px 8px;
+  border-radius: 5px;
+  border-bottom: 2px solid #F0B500;
+}
+#navBarCont #navBar #navBarLinks .navBarButton::after {
+  content: "";
+  background: transparent;
+}
+#navBarCont #navBar #navBarLinks .navBarSeperator {
+  width: 1px;
+  height: 22px;
+  background-color: #F4F4F4;
+}
+
+#footerCont {
+  width: 100%;
+  height: 75px;
+  background-color: #535353;
+  border: 1px solid #2D2D2D;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: initial;
+  align-items: center;
+}
+#footerCont #footer {
+  width: 1300px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+#footerCont #footer .footerContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+#footerCont #footer .footerContent ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-right: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: initial;
+}
+#footerCont #footer .footerContent ul li a {
+  color: #F4F4F4;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+}
+#footerCont #footer .footerContent .footerSocial {
+  display: flex;
+  flex-direction: column;
+  justify-content: initial;
+  align-items: flex-end;
+}
+#footerCont #footer .footerContent .footerSocial span {
+  color: #F4F4F4;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+#footerCont #footer .footerContent .footerSocial .footerSocialCont {
+  display: flex;
+  flex-direction: row;
+  justify-content: initial;
+  align-items: initial;
+}
+#footerCont #footer .footerContent .footerSocial .footerSocialCont a:not(:last-child) {
+  margin-right: 5px;
+}
+
+/*# sourceMappingURL=navbar-footer.css.map */
