@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+html,
+body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+#navBarCont {
+  width: 100%;
+  height: 70px;
+  background-color: #FDFDFD;
+  border-bottom: 1px solid #F4F4F4;
+  display: flex;
+  flex-direction: row;
+  justify-content: initial;
+  align-items: center;
+}
+#navBarCont #navBar {
+  width: 1300px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+#navBarCont #navBar #navBarLinks {
+  display: flex;
+  flex-direction: row;
+  justify-content: initial;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#navBarCont #navBar #navBarLinks .navBarLink {
+  margin: 0 5px;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: #2D2D2D;
+  font-weight: 500;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+#navBarCont #navBar #navBarLinks .navBarLink::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 3px;
+  background: #FFC000;
+  transition: width 200ms;
+}
+#navBarCont #navBar #navBarLinks .navBarLink:hover::after {
+  width: 100%;
+}
+#navBarCont #navBar #navBarLinks .navBarButton {
+  color: #fff;
+  background-color: #FFC000;
+  padding: 7px 8px;
+  border-radius: 5px;
+  border-bottom: 2px solid #F0B500;
+}
+#navBarCont #navBar #navBarLinks .navBarButton::after {
+  content: "";
+  background: transparent;
+}
+#navBarCont #navBar #navBarLinks .navBarSeperator {
+  width: 1px;
+  height: 22px;
+  background-color: #F4F4F4;
+}
+
+/*# sourceMappingURL=navbar.css.map */

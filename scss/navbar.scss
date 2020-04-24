@@ -1,0 +1,78 @@
+@use 'colors';
+@use 'external';
+@use 'shared';
+
+// 
+html,
+body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+// 
+#navBarCont {
+    width: 100%;
+    height: 70px;
+    background-color: colors.$shade-1;
+    border-bottom: 1px solid colors.$shade-2;
+    @include shared.flex(row, initial, center);
+
+    // 
+    #navBar {
+        width: 1300px;
+        height: 100%;
+        margin: 0 auto;
+        @include shared.flex(row, space-between, center);
+
+        #navBarLinks {
+            @include shared.flex(row, initial, center);
+            list-style: none;
+            margin: 0;
+            padding: 0;
+
+            .navBarLink {
+                margin: 0 5px;
+                font-family: 'Roboto', sans-serif;
+                font-size: 14px;
+                color: colors.$shade-3;
+                font-weight: 500;
+                text-transform: capitalize;
+                cursor: pointer;
+
+                &::after {
+                    content: '';
+                    display: block;
+                    width: 0;
+                    height: 3px;
+                    background: colors.$accent;
+                    transition: width 200ms;
+                }
+
+                &:hover::after {
+                    width: 100%;
+                }
+            }
+
+            .navBarButton {
+                color: colors.$white;
+                background-color: colors.$accent;
+                padding: 7px 8px;
+                border-radius: 5px;
+                border-bottom: 2px solid colors.$accent-dark;
+
+                &::after {
+                    content: '';
+                    background: transparent;
+                }
+            }
+
+            .navBarSeperator {
+                width: 1px;
+                height: 22px;
+                background-color: colors.$shade-2;
+            }
+        }
+    }
+}
