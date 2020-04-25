@@ -20,6 +20,27 @@ body {
     @include shared.flex(row, initial, center);
 
     // 
+    @media screen and (max-width:500px) {
+        // height: 60px;
+        // display: none;
+
+        #navBar {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 0 20px;
+            position: relative;
+
+            #navBarLinks {
+                display: none !important;
+            }
+
+            #mobileLinks {
+                display: flex !important;
+            }
+        }
+    }
+
+    // 
     #navBar {
         width: 1300px;
         height: 100%;
@@ -74,6 +95,91 @@ body {
                 background-color: colors.$shade-2;
             }
         }
+
+        #mobileLinks {
+            @include shared.flex(row, initial, center);
+
+            // 
+            .mobileItem {
+                background: colors.$accent;
+                border: none;
+                // 
+                padding: 6px 8px;
+                color: colors.$white;
+                text-decoration: none;
+                font-family: 'Roboto', sans-serif;
+                font-weight: 500;
+                border-radius: 3px;
+                border-bottom: 2px solid colors.$accent-dark;
+                transition: border-bottom 200ms ease-in-out;
+
+                &:active {
+                    border-width: 0px;
+                }
+
+                // box-sizing: border-box;
+                &:not(:last-child) {
+                    margin-right: 5px;
+                }
+
+                svg {
+                    // height: px;
+                }
+            }
+
+            #mobileMenu {
+                @include shared.flex(column, initial, center);
+                display: none;
+                width: 100%;
+                height: fit-content;
+                box-sizing: border-box;
+                position: absolute;
+                top: 70px;
+                left: 0;
+                background-color: colors.$shade-1;
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+                box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.05);
+
+                ul {
+                    width: 100%;
+                    padding: 0;
+                    margin: 0;
+                    list-style: none;
+
+                    li {
+                        // background-color: colors.$shade-1;
+                        width: 100%;
+                        text-align: center;
+                        padding: 10px 0;
+                        transition: background-color 100ms ease-in-out;
+
+                        &:not(:last-child) {
+                            border-bottom: 1px solid colors.$shade-2-5;
+                        }
+
+                        &:hover {
+                            background-color: colors.$shade-2;
+                        }
+
+                        a {
+                            width: fit-content;
+                            text-decoration: none;
+                            font-family: 'Roboto', sans-serif;
+                            font-size: 14px;
+                            font-weight: 500;
+                            text-transform: capitalize;
+                            color: colors.$shade-4;
+                        }
+                    }
+                }
+            }
+        }
+
+        @media screen and (max-width:1350px) {
+            width: 1000px;
+        }
+
     }
 }
 
@@ -85,6 +191,43 @@ body {
     border: 1px solid colors.$shade-3;
     box-sizing: border-box;
     @include shared.flex(row, initial, center);
+
+    @media screen and (max-width:500px) {
+        height: 77px;
+
+        // display: none;
+        #footer {
+            position: relative;
+            box-sizing: border-box;
+            padding: 0 20px;
+
+            .footerLogo {
+                margin-top: -15px;
+            }
+
+            .footerContent {
+                ul {
+                    margin-right: 0 !important;
+
+                    li {
+                        a {
+                            font-size: 10px !important;
+                        }
+                    }
+                }
+
+                .footerSocial {
+                    position: absolute;
+                    left: 24px;
+                    bottom: 0;
+
+                    span {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
 
     #footer {
         width: 1300px;
@@ -137,6 +280,10 @@ body {
                     }
                 }
             }
+        }
+
+        @media screen and (max-width:1350px) {
+            width: 1000px;
         }
 
     }

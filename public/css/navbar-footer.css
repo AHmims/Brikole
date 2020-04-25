@@ -17,6 +17,20 @@ body {
   justify-content: initial;
   align-items: center;
 }
+@media screen and (max-width: 500px) {
+  #navBarCont #navBar {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 20px;
+    position: relative;
+  }
+  #navBarCont #navBar #navBarLinks {
+    display: none !important;
+  }
+  #navBarCont #navBar #mobileLinks {
+    display: flex !important;
+  }
+}
 #navBarCont #navBar {
   width: 1300px;
   height: 100%;
@@ -71,6 +85,79 @@ body {
   height: 22px;
   background-color: #F4F4F4;
 }
+#navBarCont #navBar #mobileLinks {
+  display: flex;
+  flex-direction: row;
+  justify-content: initial;
+  align-items: center;
+}
+#navBarCont #navBar #mobileLinks .mobileItem {
+  background: #FFC000;
+  border: none;
+  padding: 6px 8px;
+  color: #fff;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  border-radius: 3px;
+  border-bottom: 2px solid #F0B500;
+  transition: border-bottom 200ms ease-in-out;
+}
+#navBarCont #navBar #mobileLinks .mobileItem:active {
+  border-width: 0px;
+}
+#navBarCont #navBar #mobileLinks .mobileItem:not(:last-child) {
+  margin-right: 5px;
+}
+#navBarCont #navBar #mobileLinks #mobileMenu {
+  display: flex;
+  flex-direction: column;
+  justify-content: initial;
+  align-items: center;
+  display: none;
+  width: 100%;
+  height: fit-content;
+  box-sizing: border-box;
+  position: absolute;
+  top: 70px;
+  left: 0;
+  background-color: #FDFDFD;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.05);
+}
+#navBarCont #navBar #mobileLinks #mobileMenu ul {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+#navBarCont #navBar #mobileLinks #mobileMenu ul li {
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  transition: background-color 100ms ease-in-out;
+}
+#navBarCont #navBar #mobileLinks #mobileMenu ul li:not(:last-child) {
+  border-bottom: 1px solid #E9E9E9;
+}
+#navBarCont #navBar #mobileLinks #mobileMenu ul li:hover {
+  background-color: #F4F4F4;
+}
+#navBarCont #navBar #mobileLinks #mobileMenu ul li a {
+  width: fit-content;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: #535353;
+}
+@media screen and (max-width: 1350px) {
+  #navBarCont #navBar {
+    width: 1000px;
+  }
+}
 
 #footerCont {
   width: 100%;
@@ -82,6 +169,33 @@ body {
   flex-direction: row;
   justify-content: initial;
   align-items: center;
+}
+@media screen and (max-width: 500px) {
+  #footerCont {
+    height: 77px;
+  }
+  #footerCont #footer {
+    position: relative;
+    box-sizing: border-box;
+    padding: 0 20px;
+  }
+  #footerCont #footer .footerLogo {
+    margin-top: -15px;
+  }
+  #footerCont #footer .footerContent ul {
+    margin-right: 0 !important;
+  }
+  #footerCont #footer .footerContent ul li a {
+    font-size: 10px !important;
+  }
+  #footerCont #footer .footerContent .footerSocial {
+    position: absolute;
+    left: 24px;
+    bottom: 0;
+  }
+  #footerCont #footer .footerContent .footerSocial span {
+    display: none;
+  }
 }
 #footerCont #footer {
   width: 1300px;
@@ -136,6 +250,11 @@ body {
 }
 #footerCont #footer .footerContent .footerSocial .footerSocialCont a:not(:last-child) {
   margin-right: 5px;
+}
+@media screen and (max-width: 1350px) {
+  #footerCont #footer {
+    width: 1000px;
+  }
 }
 
 /*# sourceMappingURL=navbar-footer.css.map */
