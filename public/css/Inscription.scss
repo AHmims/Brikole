@@ -1,0 +1,117 @@
+#conteneurIns {
+    width: 38%;
+    background-color: white;
+    height: 430px;
+    margin-left: 30%;
+    align-items: center;
+    justify-content: center;
+
+    img {
+        width: 90px;
+        height: 90px;
+        margin-left: 40%;
+        display: block;
+    }
+
+    #parag {
+        font-family: 'Roboto', sans-serif;
+        font-size: 28px;
+        font-weight: 900;
+        margin-left: 10%;
+    }
+
+    .divInput {
+        display: flex;
+        height: 40px;
+        width: 100%;
+        margin-left: 15%;
+        flex-wrap: wrap;
+
+        input {
+            flex-direction: row;
+            width: 65%;
+            height: 35px;
+            padding-left: 2%;
+            background-color: rgba(235, 233, 233, 0.205);
+            border-style: none;
+            border: .1px solid rgba(235, 233, 233, 0.459);
+
+        }
+
+        .verif {
+            width: 10%;
+            height: 36px;
+            background-color: white;
+            border: .1px solid rgba(235, 233, 233, 0.459);
+            background-color: rgba(235, 233, 233, 0.459);
+
+            img {
+                width: 10px;
+                height: 10px;
+                margin-top: 15px;
+            }
+
+
+        }
+
+        #divButt {
+            width: 100%;
+            height: 40px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin-top: 8px;
+
+            #annulation {
+                width: 38%;
+                height: auto;
+                background-color: rgb(216, 216, 216);
+                font-family: 'Roboto', sans-serif;
+                color: rgb(114, 114, 114);
+                border-style: none;
+            }
+
+            #confirmation {
+                color: white;
+                width: 39%;
+                height: auto;
+                background-color: #FFC000;
+                margin-left: .5%;
+                font-family: 'Roboto', sans-serif;
+                border-style: none;
+            }
+        }
+    }
+}
+
+.blank {
+    width: 100%;
+    height: 50px;
+}
+
+#ligne {
+    margin-left: 33%;
+}
+
+#parag2 {
+    margin-left: 38%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    color: rgb(189, 186, 186);
+
+    span {
+        text-decoration: underline;
+        color: #FFC000;
+    }
+}
+
+#parag3 {
+    margin-left: 35%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 28px;
+}
+
+.cont {
+    height: 150px;
+    background-color: red;
+}
