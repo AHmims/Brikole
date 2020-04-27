@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap");
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+.blank {
+  height: 10px;
+}
+
+.blank_big {
+  height: 100px;
+}
+
+.P0 {
+  font-size: 24px;
+}
+
+.P1 {
+  font-size: 20px;
+}
+
+.P2 {
+  font-size: 18px;
+}
+
+.P3 {
+  font-size: 15px;
+}
+
+@media screen and (max-width: 992px) {
+  .content .column1 {
+    margin: auto 25px;
+  }
+}
+.content .column1 .column2 .info1 #profilePic {
+  width: 100px;
+  height: 100px;
+  margin-left: 16px;
+}
+.content .column1 .column2 .info1 .name_job {
+  background-color: #FDFDFD;
+  width: 300px;
+  height: 145px;
+  margin-top: -50px;
+  border: 1px solid #F4F4F4;
+}
+.content .column1 .column2 .info1 .name_job i {
+  float: right;
+  margin-right: 8px;
+  margin-top: -2px;
+  color: #FFC000;
+}
+.content .column1 .column2 .info1 .name_job h1 {
+  font-weight: bold;
+  margin-top: 61px;
+  margin-left: 16px;
+}
+.content .column1 .column2 .info1 .name_job p {
+  margin-left: 16px;
+}
+.content .column1 .column2 .info2 i {
+  color: #FFC000;
+  margin-left: 4px;
+}
+.content .column1 .column2 .info3 p {
+  font-weight: bold;
+}
+.content .column1 .column2 .info3 i {
+  color: #FFC000;
+}
+.content .column1 .column2 .info4 {
+  color: white;
+}
+.content .column1 .column2 .info4 div {
+  background-color: #FFC000;
+  border-radius: 5px;
+  padding: 3px;
+  width: 153px;
+  border-bottom: 2px solid #F0B500;
+}
+.content .column1 .column2 .info4 div i {
+  transform: rotateY(180deg);
+  margin: 0 6px;
+}
+.content .column1 .column2 .info5 p {
+  font-weight: bold;
+}
+.content .column1 .column2 .info5 span {
+  background-color: #FDFDFD;
+  border: solid 1px #E9E9E9;
+  border-radius: 14px;
+  padding: 3px 20px;
+  color: #868686;
+}
+.content .column1 .column2 .info6 p {
+  font-weight: bold;
+}
+.content .column1 .column2 .info6 .Badge {
+  display: flex;
+}
+.content .column1 .column2 .info6 .Badge .levelParent {
+  margin-left: 50px;
+}
+.content .column1 .column2 .info6 .Badge .levelParent .level {
+  font-size: 14px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+}
+.content .column1 .column2 .info6 .Badge .levelParent .remainder {
+  height: 2px;
+  background-color: #E9E9E9;
+  width: 250px;
+}
+.content .column1 .column2 .info6 .Badge .levelParent .progress {
+  height: 4px;
+  background-color: #FFC000;
+  width: 200px;
+  margin-top: -3px;
+}
+.content .column1 .column3 .column3_2 .portfolio p {
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+.content .column1 .column3 .column3_2 .portfolio img {
+  padding: 10px;
+}
+.content .column1 .column3 .column3_2 .comments p {
+  font-weight: 500;
+}
+.content .column1 .column3 .column3_2 .comments .commentContent {
+  font-weight: 300;
+  margin-bottom: 0px;
+}
+.content .column1 .column3 .column3_2 .comments .commentDate {
+  color: #868686;
+  font-weight: 300;
+  float: right;
+}
+
+/*# sourceMappingURL=ProfilBrikoleur.css.map */
