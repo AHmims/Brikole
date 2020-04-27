@@ -1,0 +1,261 @@
+@use 'colors';
+@use 'external';
+@use 'shared';
+$white:#fff;
+$shade-1:#FDFDFD;
+$shade-2:#F4F4F4;
+$shade-2-5:#E9E9E9;
+$shade-3:#2D2D2D;
+$shade-4:#535353;
+$shade-6:#868686;
+$accent:#FFC000;
+$accent-dark:#F0B500;
+$accent-overlay:rgba(255, 191, 0, 0.2);
+//
+.Blank{
+    width: 100%;
+    height: 60px;
+    background-color: white;
+
+}
+
+/***********************/
+/**  Search Engine    **/
+/***********************/
+#contentSEARCH{
+    width: 1300px;
+    margin: auto;
+    margin: 0 auto;
+}
+
+#Results{
+width: 70%;
+}
+#contantTitle {
+    h1{  
+        text-align: center;
+    }
+    width: 50%;
+    margin: auto;
+    font-family: 'Roboto', sans-serif;
+                    color: $shade-3;
+                    
+    
+#searchBarSEARCH{
+  margin-top: 30px;
+  
+  margin-bottom: 30px;
+    .searchMenuSelect {
+        box-sizing: border-box;
+        padding: 0 10px;
+        margin: 0;
+        // 
+        width: 210px;
+        height: 60px;
+        // 
+        font-family: 'Roboto', sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        font-style: italic;
+        color:$shade-6;
+        // 
+        border: 1px solid $shade-2;
+        background-color: $shade-1;
+        // 
+        cursor: pointer;
+    }
+    #searchMenuBtn {
+        width: 210px;
+        height: 60px;
+        background-color: $accent;
+        border: 1px solid $accent-dark;
+        border-bottom-width: 4px;
+        cursor: pointer;
+
+        span {
+            color: $white;
+            font-family: 'Roboto', sans-serif;
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        svg {
+            margin-left: 7px;
+        }
+    }
+}
+}
+
+
+
+#Resultcontainer{
+    width: 100%;
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+        //    margin-top: 55px;
+
+    #Results{
+        width: 74%;
+
+    }
+    #sortEngine{
+        height: 164px;
+        span{
+            color:  $shade-6;
+            font-size: 14px;
+            font-weight: lighter;
+        }
+        h2{
+            margin-top: 0;
+        }
+        #categories{
+            margin-top: -14px;
+            #categoriesBox{
+                width: 50%;
+                background-color: #F4F4F4;
+                // border: 1px solid $shade-2;
+                    height: 35px;
+                p{
+                    text-decoration: underline;
+                    font-weight: bold;
+                    padding: 8px ;
+                }
+                
+            }
+            .grid-container {
+                display: grid;
+                grid-template-columns: auto auto auto auto;
+                // grid-gap: 10px;
+                background-color: white;
+                padding: -3px;
+                width: 50%;
+                div {
+                    background-color: rgba(255, 255, 255, 0.8);
+                    border: 1px solid $shade-2;
+                    text-align: center;
+                    height: 42px;
+                    p {    position: relative;
+                        top: -6px;
+                        color: $shade-6;
+
+                    }
+                    
+                  }
+              }
+            
+           
+        }
+    }
+    .OrderResult{
+        position: relative;
+        bottom: 35px;
+        right: -560px;
+        height: 35px;
+        width: 150px;
+        border: none;
+        background-color:$shade-2-5;
+    }   
+    .active{
+        background-color: $accent;
+        color: white;
+    }
+    .ResultProfiles{
+        // background-color: ;
+        position: relative;
+        top: -6px;
+        
+    }
+    .ProfileFound{
+        width: 91%;
+        display: flex;
+        height: 180px;
+        border: 1px solid $shade-2;
+        .PictureProfile{
+            height: 150px;
+            width: 150px;
+            background-size: cover;      
+            background-position: center;
+            background-image: url("../img/P1.png");
+            margin: 15px;
+            border-radius: 10px;
+        }
+        b{
+            position: relative;
+            top: 24px;
+            left: 17px;
+            font-size: 20px;
+        }
+        button{
+            position: relative;
+            top: 35px;
+            left: 17px;
+            border-radius: 50px;
+            background-color: $shade-1;
+            border: 1px solid $shade-2-5;
+            height: 20px;
+        }
+        .City{
+            position: relative;
+            top: 35px;
+            left: 17px;
+            color: $accent;
+            
+        }
+    }
+}
+
+#adertisment{
+    width: 356px;
+    border: 2px solid #FFC000;
+    height: 790px;
+    position: sticky;
+    top: 95px;
+    .PremiemBox {
+        position: relative;
+        width: 100%;
+        height: 48px;
+        left: x;
+        top: px;
+        background: #FFC000;
+        border-radius: 0px;
+        p{
+            color: white;
+            text-align: center;
+            margin: 0 auto;
+            padding: 15px;
+        }
+
+    }
+    .Adv{
+        background-image: url(../img/Agence.png);
+        
+    background-size: auto !important;
+        height: 250px;
+        width: 250px;
+        margin-top: 14%;
+        margin-left: 14%;
+        background-size:250px ;
+.overlay{
+    width: 100%;
+    height: 100%;
+    
+    background-color: #FDF1CA;
+    opacity: 0.2;
+}
+img{
+    width: 100%;
+    height: 100% !important;
+position: relative;
+
+}
+    }
+    .adName{
+        margin-left: 14%;
+        margin-top: 7px;
+        font-weight: bold;
+    }
+    .adAdress{
+        margin-left: 14%;
+        margin-top: -10px;color: $accent;
+    }
+}
