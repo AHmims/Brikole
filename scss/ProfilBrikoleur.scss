@@ -1,7 +1,14 @@
 @use 'colors';
 @use 'external';
 
-$fontSize1: 24px;
+.buttonStyle {
+  background-color: colors.$accent;
+  border-radius: 5px;
+  padding: 3px;
+
+  border-bottom: 3px solid colors.$accent-dark;
+}
+
 body {
   //   box-sizing: border-box;
 }
@@ -32,146 +39,208 @@ body {
 }
 
 .content {
-  .column1 {
-    @media screen and (max-width: 992px) {
-      margin: auto 25px;
-    }
-    .column2 {
-      //   padding: 0;
-      //   @media screen and (max-width: 768px) {
-      //     padding: 15px;
-      //   }
-      .info1 {
-        #profilePic {
-          width: 100px;
-          height: 100px;
-          margin-left: 16px;
-        }
-
-        .name_job {
-          background-color: colors.$shade-1;
-          width: 300px;
-          height: 145px;
-          margin-top: -50px;
-          border: 1px solid colors.$shade-2;
-          i {
-            float: right;
-            margin-right: 8px;
-            margin-top: -2px;
-            color: colors.$accent;
-          }
-          h1 {
-            font-weight: bold;
-            margin-top: 61px;
+  .row {
+    // margin-right: 0;
+    .column1 {
+      @media screen and (max-width: 992px) {
+        margin: auto 25px;
+      }
+      .column2 {
+        //   padding: 0;
+        //   @media screen and (max-width: 768px) {
+        //     padding: 15px;
+        //   }
+        .info1 {
+          #profilePic {
+            width: 100px;
+            height: 100px;
             margin-left: 16px;
           }
-          p {
-            margin-left: 16px;
-          }
-        }
-      }
-      .info2 {
-        i {
-          color: colors.$accent;
-          margin-left: 4px;
-        }
-      }
-      .info3 {
-        p {
-          font-weight: bold;
-        }
-        i {
-          color: colors.$accent;
-        }
-      }
-      .info4 {
-        color: white;
-        div {
-          background-color: colors.$accent;
-          border-radius: 5px;
-          padding: 3px;
-          width: 153px;
-          border-bottom: 2px solid colors.$accent-dark;
 
-          i {
-            transform: rotateY(180deg);
-            margin: 0 6px;
-          }
-        }
-      }
-      .info5 {
-        p {
-          font-weight: bold;
-        }
-        span {
-          background-color: colors.$shade-1;
-          border: solid 1px colors.$shade-2-5;
-          border-radius: 14px;
-          padding: 3px 20px;
-          color: colors.$shade-6;
-        }
-      }
-      .info6 {
-        p {
-          font-weight: bold;
-        }
-        .Badge {
-          display: flex;
-          //   justify-content: space-between;
-          .levelParent {
-            margin-left: 50px;
-            .level {
-              font-size: 14px;
+          .name_job {
+            background-color: colors.$shade-1;
+            width: 292px;
+            // height: 160px;
+            margin-top: -50px;
+            border: 1px solid colors.$shade-2;
+            padding-left: 16px;
+            @media screen and (max-width: 1200px) {
+              width: auto;
+            }
+            i {
+              float: right;
+              margin-right: 4px;
+              margin-top: 4px;
+              // color: colors.$accent;
+            }
+            h1 {
               font-weight: bold;
+              // margin-top: 61px;
+              // margin-left: 16px;
+            }
+            :nth-child(2) {
+              margin-top: 55px;
+            }
+            p {
+              margin-bottom: 6px;
+            }
+          }
+        }
+        .info2 {
+          i {
+            color: colors.$accent;
+            margin-left: 4px;
+          }
+        }
+        .info3 {
+          div {
+            display: flex;
+            justify-content: space-between;
+            p {
+              font-weight: bold;
+            }
+            i {
+              color: colors.$accent;
+            }
+          }
+        }
+        .info4 {
+          color: white;
+          div {
+            @extend .buttonStyle;
+            width: 153px;
+            i {
+              transform: rotateY(180deg);
+              margin: 0 6px;
+            }
+          }
+        }
+        .info5 {
+          p {
+            // font-weight: bold;
+            font-weight: 500;
+          }
+          div {
+            i {
               display: flex;
-              justify-content: space-between;
+              flex-wrap: wrap;
+              span {
+                background-color: colors.$shade-1;
+                border: solid 1px colors.$shade-2-5;
+                border-radius: 14px;
+                padding: 3px 15px;
+                color: colors.$shade-6;
+                margin-right: 10px;
+                margin-bottom: 10px;
+              }
             }
-            .remainder {
-              height: 2px;
-              background-color: colors.$shade-2-5;
-              width: 250px;
-            }
-            .progress {
-              height: 4px;
-              background-color: colors.$accent;
-              width: 200px;
-              margin-top: -3px;
+          }
+        }
+        .info6 {
+          p {
+            font-weight: bold;
+          }
+          .Badge {
+            display: flex;
+            //   justify-content: space-between;
+            .levelParent {
+              margin-left: 50px;
+              .level {
+                font-size: 14px;
+                font-weight: bold;
+                display: flex;
+                justify-content: space-between;
+              }
+              .remainder {
+                height: 2px;
+                background-color: colors.$shade-2-5;
+                width: 250px;
+              }
+              .progress {
+                height: 4px;
+                background-color: colors.$accent;
+                width: 200px;
+                margin-top: -3px;
+              }
             }
           }
         }
       }
-    }
-    .column3 {
-      .column3_1 {
-      }
-      .column3_2 {
-        // padding: 0;
-        // @media screen and (max-width: 768px) {
-        //   padding: 15px;
-        // }
-        .portfolio {
-          p {
-            font-weight: 500;
-            margin-bottom: 4px;
+      .column3 {
+        .row1 {
+          display: flex;
+          justify-content: flex-end;
+          .column3_1 {
           }
-          img {
-            //   width: 265px;
-            //   height: 213px;
-            padding: 10px;
-          }
-        }
-        .comments {
-          p {
-            font-weight: 500;
-          }
-          .commentContent {
-            font-weight: 300;
-            margin-bottom: 0px;
-          }
-          .commentDate {
-            color: colors.$shade-6;
-            font-weight: 300;
-            float: right;
+          .column3_2 {
+            // padding: 0;
+            // @media screen and (max-width: 768px) {
+            //   padding: 15px;
+            // }
+            .portfolio {
+              span {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 6px;
+                p {
+                  font-weight: 500;
+                  margin-bottom: 0;
+                  // text-transform: uppercase;
+                }
+                div {
+                  display: flex;
+                  // height: 34px;
+                  div {
+                    @extend .buttonStyle;
+                    color: white;
+                    margin-left: 14px;
+                    padding: 6px 11px 0 11px;
+                    // display: flex;
+                    // align-items: baseline;
+                    font-size: 14px;
+                    i {
+                      font-size: 20px;
+                    }
+                  }
+                  .addPics {
+                    i {
+                      margin-right: 10px;
+                    }
+                  }
+                }
+              }
+
+              img {
+                //   width: 265px;
+                //   height: 213px;
+                padding: 10px;
+              }
+            }
+            .comments {
+              p {
+                font-weight: 500;
+              }
+              .commentContent {
+                display: flex;
+                .commenterImg {
+                  margin-right: 10px;
+                }
+                .commenterInfo {
+                  .commentOwner {
+                    margin-bottom: 6px;
+                  }
+                  .commentText {
+                    font-weight: 300;
+                    margin-bottom: 0px;
+                  }
+                  .commentDate {
+                    color: colors.$shade-6;
+                    font-weight: 300;
+                    float: right;
+                  }
+                }
+              }
+            }
           }
         }
       }

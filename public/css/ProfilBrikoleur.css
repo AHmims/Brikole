@@ -1,4 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap");
+.buttonStyle, .content .row .column1 .column3 .row1 .column3_2 .portfolio span div div, .content .row .column1 .column2 .info4 div {
+  background-color: #FFC000;
+  border-radius: 5px;
+  padding: 3px;
+  border-bottom: 3px solid #F0B500;
+}
+
 * {
   font-family: "Roboto", sans-serif;
 }
@@ -28,111 +35,155 @@
 }
 
 @media screen and (max-width: 992px) {
-  .content .column1 {
+  .content .row .column1 {
     margin: auto 25px;
   }
 }
-.content .column1 .column2 .info1 #profilePic {
+.content .row .column1 .column2 .info1 #profilePic {
   width: 100px;
   height: 100px;
   margin-left: 16px;
 }
-.content .column1 .column2 .info1 .name_job {
+.content .row .column1 .column2 .info1 .name_job {
   background-color: #FDFDFD;
-  width: 300px;
-  height: 145px;
+  width: 292px;
   margin-top: -50px;
   border: 1px solid #F4F4F4;
+  padding-left: 16px;
 }
-.content .column1 .column2 .info1 .name_job i {
+@media screen and (max-width: 1200px) {
+  .content .row .column1 .column2 .info1 .name_job {
+    width: auto;
+  }
+}
+.content .row .column1 .column2 .info1 .name_job i {
   float: right;
-  margin-right: 8px;
-  margin-top: -2px;
-  color: #FFC000;
+  margin-right: 4px;
+  margin-top: 4px;
 }
-.content .column1 .column2 .info1 .name_job h1 {
+.content .row .column1 .column2 .info1 .name_job h1 {
   font-weight: bold;
-  margin-top: 61px;
-  margin-left: 16px;
 }
-.content .column1 .column2 .info1 .name_job p {
-  margin-left: 16px;
+.content .row .column1 .column2 .info1 .name_job :nth-child(2) {
+  margin-top: 55px;
 }
-.content .column1 .column2 .info2 i {
+.content .row .column1 .column2 .info1 .name_job p {
+  margin-bottom: 6px;
+}
+.content .row .column1 .column2 .info2 i {
   color: #FFC000;
   margin-left: 4px;
 }
-.content .column1 .column2 .info3 p {
+.content .row .column1 .column2 .info3 div {
+  display: flex;
+  justify-content: space-between;
+}
+.content .row .column1 .column2 .info3 div p {
   font-weight: bold;
 }
-.content .column1 .column2 .info3 i {
+.content .row .column1 .column2 .info3 div i {
   color: #FFC000;
 }
-.content .column1 .column2 .info4 {
+.content .row .column1 .column2 .info4 {
   color: white;
 }
-.content .column1 .column2 .info4 div {
-  background-color: #FFC000;
-  border-radius: 5px;
-  padding: 3px;
+.content .row .column1 .column2 .info4 div {
   width: 153px;
-  border-bottom: 2px solid #F0B500;
 }
-.content .column1 .column2 .info4 div i {
+.content .row .column1 .column2 .info4 div i {
   transform: rotateY(180deg);
   margin: 0 6px;
 }
-.content .column1 .column2 .info5 p {
-  font-weight: bold;
+.content .row .column1 .column2 .info5 p {
+  font-weight: 500;
 }
-.content .column1 .column2 .info5 span {
+.content .row .column1 .column2 .info5 div i {
+  display: flex;
+  flex-wrap: wrap;
+}
+.content .row .column1 .column2 .info5 div i span {
   background-color: #FDFDFD;
   border: solid 1px #E9E9E9;
   border-radius: 14px;
-  padding: 3px 20px;
+  padding: 3px 15px;
   color: #868686;
+  margin-right: 10px;
+  margin-bottom: 10px;
 }
-.content .column1 .column2 .info6 p {
+.content .row .column1 .column2 .info6 p {
   font-weight: bold;
 }
-.content .column1 .column2 .info6 .Badge {
+.content .row .column1 .column2 .info6 .Badge {
   display: flex;
 }
-.content .column1 .column2 .info6 .Badge .levelParent {
+.content .row .column1 .column2 .info6 .Badge .levelParent {
   margin-left: 50px;
 }
-.content .column1 .column2 .info6 .Badge .levelParent .level {
+.content .row .column1 .column2 .info6 .Badge .levelParent .level {
   font-size: 14px;
   font-weight: bold;
   display: flex;
   justify-content: space-between;
 }
-.content .column1 .column2 .info6 .Badge .levelParent .remainder {
+.content .row .column1 .column2 .info6 .Badge .levelParent .remainder {
   height: 2px;
   background-color: #E9E9E9;
   width: 250px;
 }
-.content .column1 .column2 .info6 .Badge .levelParent .progress {
+.content .row .column1 .column2 .info6 .Badge .levelParent .progress {
   height: 4px;
   background-color: #FFC000;
   width: 200px;
   margin-top: -3px;
 }
-.content .column1 .column3 .column3_2 .portfolio p {
-  font-weight: 500;
-  margin-bottom: 4px;
+.content .row .column1 .column3 .row1 {
+  display: flex;
+  justify-content: flex-end;
 }
-.content .column1 .column3 .column3_2 .portfolio img {
+.content .row .column1 .column3 .row1 .column3_2 .portfolio span {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+.content .row .column1 .column3 .row1 .column3_2 .portfolio span p {
+  font-weight: 500;
+  margin-bottom: 0;
+}
+.content .row .column1 .column3 .row1 .column3_2 .portfolio span div {
+  display: flex;
+}
+.content .row .column1 .column3 .row1 .column3_2 .portfolio span div div {
+  color: white;
+  margin-left: 14px;
+  padding: 6px 11px 0 11px;
+  font-size: 14px;
+}
+.content .row .column1 .column3 .row1 .column3_2 .portfolio span div div i {
+  font-size: 20px;
+}
+.content .row .column1 .column3 .row1 .column3_2 .portfolio span div .addPics i {
+  margin-right: 10px;
+}
+.content .row .column1 .column3 .row1 .column3_2 .portfolio img {
   padding: 10px;
 }
-.content .column1 .column3 .column3_2 .comments p {
+.content .row .column1 .column3 .row1 .column3_2 .comments p {
   font-weight: 500;
 }
-.content .column1 .column3 .column3_2 .comments .commentContent {
+.content .row .column1 .column3 .row1 .column3_2 .comments .commentContent {
+  display: flex;
+}
+.content .row .column1 .column3 .row1 .column3_2 .comments .commentContent .commenterImg {
+  margin-right: 10px;
+}
+.content .row .column1 .column3 .row1 .column3_2 .comments .commentContent .commenterInfo .commentOwner {
+  margin-bottom: 6px;
+}
+.content .row .column1 .column3 .row1 .column3_2 .comments .commentContent .commenterInfo .commentText {
   font-weight: 300;
   margin-bottom: 0px;
 }
-.content .column1 .column3 .column3_2 .comments .commentDate {
+.content .row .column1 .column3 .row1 .column3_2 .comments .commentContent .commenterInfo .commentDate {
   color: #868686;
   font-weight: 300;
   float: right;
