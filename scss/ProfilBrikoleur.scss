@@ -43,7 +43,9 @@ body {
     // margin-right: 0;
     .column1 {
       @media screen and (max-width: 992px) {
-        margin: auto 25px;
+        // margin: auto 25px;
+        padding-left: 25px;
+        padding-right: 25px;
       }
       .column2 {
         //   padding: 0;
@@ -209,11 +211,58 @@ body {
                   }
                 }
               }
+              .portfolioPics {
+                img {
+                  //   width: 265px;
+                  //   height: 213px;
+                  padding: 10px;
+                }
+                @media screen and (max-width: 768px) {
+                  display: none;
+                }
+              }
 
-              img {
-                //   width: 265px;
-                //   height: 213px;
-                padding: 10px;
+              .portfolioMobile {
+                @media screen and (min-width: 769px) {
+                  display: none;
+                }
+                .portfolioPicsMobile {
+                  display: flex;
+                  overflow: auto;
+                  scroll-behavior: smooth;
+                  img {
+                    width: 240px;
+                    height: 193px;
+                    padding: 0;
+                    padding-right: 5px;
+                  }
+                }
+                .portfolioPicsMobile::-webkit-scrollbar {
+                  display: none;
+                }
+                .portfolioArrowsMobile {
+                  position: absolute;
+                  margin-top: -130px;
+                  width: 100%;
+                  i {
+                    color: colors.$accent;
+                    font-size: 60px;
+                    opacity: 0.4;
+                    cursor: pointer;
+                    position: relative;
+                  }
+                  i:hover {
+                    opacity: 1;
+                  }
+                  #portfolioArrowsMobile_left {
+                    left: -15px;
+                    visibility: hidden;
+                  }
+                  #portfolioArrowsMobile_right {
+                    left: 15px;
+                    float: right;
+                  }
+                }
               }
             }
             .comments {

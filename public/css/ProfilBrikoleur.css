@@ -36,7 +36,8 @@
 
 @media screen and (max-width: 992px) {
   .content .row .column1 {
-    margin: auto 25px;
+    padding-left: 25px;
+    padding-right: 25px;
   }
 }
 .content .row .column1 .column2 .info1 #profilePic {
@@ -164,8 +165,55 @@
 .content .row .column1 .column3 .row1 .column3_2 .portfolio span div .addPics i {
   margin-right: 10px;
 }
-.content .row .column1 .column3 .row1 .column3_2 .portfolio img {
+.content .row .column1 .column3 .row1 .column3_2 .portfolio .portfolioPics img {
   padding: 10px;
+}
+@media screen and (max-width: 768px) {
+  .content .row .column1 .column3 .row1 .column3_2 .portfolio .portfolioPics {
+    display: none;
+  }
+}
+@media screen and (min-width: 769px) {
+  .content .row .column1 .column3 .row1 .column3_2 .portfolio .portfolioMobile {
+    display: none;
+  }
+}
+.content .row .column1 .column3 .row1 .column3_2 .portfolio .portfolioMobile .portfolioPicsMobile {
+  display: flex;
+  overflow: auto;
+  scroll-behavior: smooth;
+}
+.content .row .column1 .column3 .row1 .column3_2 .portfolio .portfolioMobile .portfolioPicsMobile img {
+  width: 240px;
+  height: 193px;
+  padding: 0;
+  padding-right: 5px;
+}
+.content .row .column1 .column3 .row1 .column3_2 .portfolio .portfolioMobile .portfolioPicsMobile::-webkit-scrollbar {
+  display: none;
+}
+.content .row .column1 .column3 .row1 .column3_2 .portfolio .portfolioMobile .portfolioArrowsMobile {
+  position: absolute;
+  margin-top: -130px;
+  width: 100%;
+}
+.content .row .column1 .column3 .row1 .column3_2 .portfolio .portfolioMobile .portfolioArrowsMobile i {
+  color: #FFC000;
+  font-size: 60px;
+  opacity: 0.4;
+  cursor: pointer;
+  position: relative;
+}
+.content .row .column1 .column3 .row1 .column3_2 .portfolio .portfolioMobile .portfolioArrowsMobile i:hover {
+  opacity: 1;
+}
+.content .row .column1 .column3 .row1 .column3_2 .portfolio .portfolioMobile .portfolioArrowsMobile #portfolioArrowsMobile_left {
+  left: -15px;
+  visibility: hidden;
+}
+.content .row .column1 .column3 .row1 .column3_2 .portfolio .portfolioMobile .portfolioArrowsMobile #portfolioArrowsMobile_right {
+  left: 15px;
+  float: right;
 }
 .content .row .column1 .column3 .row1 .column3_2 .comments p {
   font-weight: 500;
@@ -187,6 +235,33 @@
   color: #868686;
   font-weight: 300;
   float: right;
+}
+
+#myModal {
+  padding: 5% 7% !important;
+}
+#myModal .modal-content {
+  width: 100%;
+  height: 100%;
+}
+#myModal .modal-content .modal-body .imgsEndemble {
+  width: 100%;
+  height: 100%;
+}
+#myModal .modal-content .modal-body .imgsEndemble .singleImg {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#myModal .modal-content .modal-body .imgsEndemble .singleImg .img {
+  width: 100%;
+  height: 100%;
+}
+#myModal .modal-content .modal-body .imgsEndemble .singleImg .img img {
+  width: 1613px;
+  height: 562px;
 }
 
 /*# sourceMappingURL=ProfilBrikoleur.css.map */
