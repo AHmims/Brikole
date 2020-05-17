@@ -2,7 +2,44 @@
   include_once '../includes/Connection.php';
   include_once '../includes/Brikoler.php';
 
+  // Update Profile
+  // $Fname = "";
+  // $Lname = "";
+  // // $Profession="";
+  // $Adress="";
+  // $Telephone="";
+  function getposts()
+  {
+    $posts = array();
+    $posts[0] = $_POST['fname'];
+    $posts[1]= $_POST['flastname'];
+    // $posts[2]= $_POST['Profession'];
+    $posts[3]= $_POST['adress'];
+    $posts[4] = $_POST['telephone'];
+    $posts[5]=$_POST['fdescription'];
+    return $posts;
+  }
   
+  if(isset($_POST['submit'])){
+    $data = getposts();
+    
+    $updateProfile_Query = "UPDATE bricoleur SET prenom='$data[0]' ,nom='$data[1]' ,telephone='$data[4]',`lieu`='$data[3]', `description`='$data[5]' WHERE `id_bricoleur` =1;
+    ";
+    try{
+      // $updateProfile_Result = mysqli_query($con,$updateProfile_Query);
+    if (mysqli_query($con, $updateProfile_Query)) {
+     echo "Record updated successfully";
+   } else {
+  echo "Error updating record: " . mysqli_error($con);
+}
+      
+
+
+    }catch(Exception $ex){
+      echo 'Error Update '.$ex -> getMessage();
+    }
+  
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -369,10 +406,9 @@
     </div>
     <script src="../js/navbar_footer.js"></script>
 
-    <!-- ModalForm Update Profile -->
-    <div class="modal fade" id="myModal" role="dialog">
+  <!-- ModalForm Update Profile -->
+  <div class="modal fade" id="myModal" role="dialog">
     <div class="modal-dialog">
-    
       <!-- Modal content-->
       <div class="modal-content">
         <div class="modal-header">
@@ -380,26 +416,28 @@
           <h4 class="modal-title">Update Your Profile</h4>
         </div>
         <div class="modal-body">
-           <div class="UpdateBrikole">
-    <form action="php_UpdateProfile" method="post">
-      <p>Nom</p><input type="text" name="fname" value="<?php echo $nom ;?>"><br>
-      <p>Last nom</p><input type="text" name="flastname" value="<?php echo $prenom ;?>"><br>
-      <!-- <p>Profession:</p><input type="text" name="Profession"><br> -->
-      <p>Adress:</p>  <input type="text" name="adress" value="<?php echo $lieu ;?>"><br>
-      <p>Télephone:</p><input type="text" name="telephone" value="<?php echo $telephone ;?>"><br>
-      <p>description:</p>       <input type="textarea" name="fdescription" value="<?php echo $description ;?>"><br>
+          <div class="UpdateBrikole">
 
-      <!-- <textarea name="fdescription"><?php echo $description ;?></textarea><br> -->
-      <input type="submit" name="update" value="Update Profile">
-    </form>
-    
-    </div> 
+            <!--  -->
+            <form action="" method="POST">
+              <p>Nom</p><input type="text" name="fname" value="<?php echo $nom ;?>"><br>
+              <p>Last nom</p><input type="text" name="flastname" value="<?php echo $prenom ;?>"><br>
+              <!-- <p>Profession:</p><input type="text" name="Profession"><br> -->
+              <p>Adress:</p>  <input type="text" name="adress" value="<?php echo $lieu ;?>"><br>
+              <p>Télephone:</p><input type="text" name="telephone" value="<?php echo $telephone ;?>"><br>
+              <!-- <p>description:</p>       <input type="textarea" name="fdescription" value="<?php echo $description ;?>"><br> -->
+              <textarea name="fdescription"><?php echo $description ;?></textarea><br>
+              <input type="submit" name="submit" value="Update Profile">
+            </form>
+
+
+          </div> 
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
         </div>
       </div>
-      
     </div>
+  </div>
   </body>
 </html>

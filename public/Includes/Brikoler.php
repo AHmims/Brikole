@@ -1,7 +1,6 @@
 <?php
 
   include_once '../includes/Connection.php';
-  include_once '../includes/ProfilBrikoleur.php';
   $sql = "SELECT * FROM `bricoleur` WHERE id_bricoleur = '1'";
   $result = $con->query($sql);
   if($result-> num_rows > 0){
@@ -26,40 +25,5 @@
       }   
     }
 
-  // Update Profile
-  // $Fname = "";
-  // $Lname = "";
-  // // $Profession="";
-  // $Adress="";
-  // $Telephone="";
-  function getposts()
-  {
-    $posts = array();
-    $posts[0] = $_POST['fname'];
-    $posts[1]= $_POST['flastname'];
-    // $posts[2]= $_POST['Profession'];
-    $posts[3]= $_POST['adress'];
-    $posts[4] = $_POST['telephone'];
-    return $posts;
-  }
   
-  if(isset($_POST['update'])){
-    $data = getposts();
-    $updateProfile_Query = "UPDATE bricoleur SET prenom='$data[1]' ,nom='$data[0]' ,telephone='$data[4]',`lieu`='$data[3]' WHERE `id_bricoleur` =1;";
-    try{
-      $updateProfile_Result = mysqli_query($con,$updateProfile_Query);
-      if($updateProfile_Result){
-        if(mysqli_affected_rows($con)>0){
-          echo 'Date Updated';
-        }
-        else{
-          echo 'Data Not Updated';
-        }
-      } 
-      
-    }catch(Exception $ex){
-      echo 'Error Update '.$ex -> getMessage();
-    }
-  
-}
 ?>
