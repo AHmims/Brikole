@@ -8,13 +8,7 @@ body {
           flex-direction: column;
 }
 
-#navBarCont {
-  -webkit-box-flex: 0;
-      -ms-flex: none;
-          flex: none;
-}
-
-#conteneurIns {
+#conteneurIdent {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -32,22 +26,22 @@ body {
   width: -moz-fit-content;
   width: fit-content;
   margin: 0 auto;
-  height: 80%;
+  margin-top: 175px;
 }
 
-#conteneurIns img {
+#conteneurIdent img {
   width: 90px;
   height: 90px;
   display: block;
 }
 
-#conteneurIns #parag {
+#conteneurIdent #parag {
   font-family: 'Roboto', sans-serif;
   font-size: 28px;
   font-weight: 900;
 }
 
-#conteneurIns .divInput {
+#conteneurIdent .divInput {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -65,7 +59,7 @@ body {
           align-items: center;
 }
 
-#conteneurIns .divInput input {
+#conteneurIdent .divInput input {
   -webkit-box-flex: 0;
       -ms-flex: none;
           flex: none;
@@ -79,9 +73,14 @@ body {
   background-color: rgba(235, 233, 233, 0.205);
   background: #FDFDFD;
   border: 1px solid #F4F4F4;
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
 }
 
-#conteneurIns .divInput #divButt {
+#conteneurIdent .divInput #divButt {
   width: 100%;
   height: 50px;
   margin-top: 10px;
@@ -97,7 +96,7 @@ body {
           justify-content: center;
 }
 
-#conteneurIns .divInput #divButt #annulation {
+#conteneurIdent .divInput #divButt #annulation {
   width: 220px;
   height: 50px;
   background-color: #d8d8d8;
@@ -111,7 +110,7 @@ body {
   letter-spacing: 0.02em;
 }
 
-#conteneurIns .divInput #divButt #confirmation {
+#conteneurIdent .divInput #divButt #confirmation {
   color: white;
   width: 220px;
   height: 50px;
@@ -126,11 +125,11 @@ body {
   letter-spacing: 0.02em;
 }
 
-#conteneurIns #ligne {
-  margin-top: 130px;
+#conteneurIdent #ligne1 {
+  margin-top: 123px;
 }
 
-#conteneurIns #parag2 {
+#conteneurIdent #parag2 {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -139,12 +138,12 @@ body {
   color: #535353;
 }
 
-#conteneurIns #parag2 span {
+#conteneurIdent #parag2 span {
   text-decoration: underline;
   color: #FFC000;
 }
 
-#conteneurIns #parag3 {
+#conteneurIdent #parag3 {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -162,6 +161,7 @@ body {
   -webkit-box-flex: 0;
       -ms-flex: none;
           flex: none;
+  margin-top: 105px;
 }
 
 #navBarLinks {

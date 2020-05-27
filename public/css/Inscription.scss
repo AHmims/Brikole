@@ -36,9 +36,7 @@ body {
     justify-content: center;
     width: fit-content;
     margin: 0 auto;
-    //height: auto;
-
-
+    margin-top: 90px;
 
     img {
         width: 90px;
@@ -54,12 +52,17 @@ body {
 
     }
 
+    #ligne {
+        margin-top: 390px;
+    }
+
     .divInput {
         display: flex;
         height: 50px;
         width: 100%;
         flex-direction: column;
         align-items: center;
+        color: #868686;
 
         @media screen and (max-width:768px) {
             width: 95%;
@@ -82,6 +85,14 @@ body {
                 background-color: rgba(235, 233, 233, 0.205);
                 background: #FDFDFD;
                 border: 1px solid #F4F4F4;
+                font-family: 'Roboto', sans-serif;
+                font-style: italic;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 16px;
+
+
+
 
                 @media screen and (max-width:768px) {
                     width: 340px;
@@ -173,9 +184,6 @@ body {
         }
     }
 
-    #ligne {
-        margin-top: 300px;
-    }
 
     #parag2 {
         font-family: 'Roboto', sans-serif;
@@ -184,6 +192,7 @@ body {
         font-size: 16px;
         line-height: 19px;
         color: #535353;
+        margin-top: -3px;
 
         span {
             text-decoration: underline;
@@ -233,5 +242,5 @@ body {
             //margin-top: 15px;
             width: 80px;
         }
-
     }
+}

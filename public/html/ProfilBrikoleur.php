@@ -1,6 +1,6 @@
 <?php
-  include_once '../includes/Connection.php';
-  include_once '../includes/Brikoler.php';
+  // include_once '../includes/Connection.php';
+  // include_once '../includes/Brikoler.php';
 
   // Update Profile
   // $Fname = "";
