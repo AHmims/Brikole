@@ -13,6 +13,7 @@
 <body>
     <?php
     include './includes/header.php';
+    include './Includes/search.php';
     ?>
     <div class="Blank"></div>
 
@@ -22,13 +23,44 @@
             <div id="contantTitle">
                 <h1>Trouver votre Brikoleur maintenant :</h1>
                 <form id="searchBarSEARCH" method="POST">
-                    <select name="profession" id="" class="searchMenuSelect">
-                        <option value="opt">Profession...</option>
+                    <select name="search_profession" id="" class="searchMenuSelect">
+                        <option value='*'>Touts les professions</option>
+                        <?php
+                        $selectedIndex = "null";
+                        if (isset($_POST["search_profession"])) {
+                            if ($_POST["search_profession"] != "*") {
+                                $selectedIndex = $_POST["search_profession"];
+                            }
+                        }
+                        $professions = getAllDataFromTable("profession");
+                        while ($profession = $professions->fetch_assoc()) {
+                            $professionId = $profession["id_profession"];
+                            $professionName = $profession["libelle_profession"];
+                            $state = "";
+                            // 
+                            if ($selectedIndex == "p:$professionId")
+                                $state = "selected";
+                            echo "<option value='p:$professionId' $state style='background-color:grey'>$professionName</option>";
+                            $state = "";
+                            // 
+                            $sousProfessions = getSousProfessionsByProfessionId($professionId);
+                            while ($sousProfession = $sousProfessions->fetch_assoc()) {
+                                $sousProfessionId = $sousProfession["id_Sprofession"];
+                                $sousProfessionName = $sousProfession["libelle"];
+                                // 
+                                if ($selectedIndex == "sp:$sousProfessionId")
+                                    $state = "selected";
+                                echo "<option value='sp:$sousProfessionId' $state>$sousProfessionName</option>";
+                                $state = "";
+                            }
+                        }
+                        ?>
                     </select>
-                    <select name="ville" id="" class="searchMenuSelect">
-                        <option value="opt">Ville...</option>
+                    <select name="search_city" id="" class="searchMenuSelect">
+                        <option value="">Tout le maroc</option>
+                        <option value="safi">Safi</option>
+                        <option value="tanger">Tanger</option>
                     </select>
-                    <input type="text" name="vv">
                     <!--  -->
                     <button id="searchMenuBtn" type="submit">
                         <span>Trouver</span>
@@ -41,8 +73,27 @@
             </div>
             <div id="Resultcontainer">
                 <div id="Results">
+                    <?php
+                    $bricoleurs = getBricoleur();
+                    ?>
                     <div id="sortEngine">
-                        <h2>145 Résultats <span>à Safi, Maroc</span></h2>
+                        <?php
+                        $bricoleursCount = $bricoleurs->num_rows;
+                        $searchCity = "au Maroc";
+                        if (isset($_POST["search_city"])) {
+                            $searchCity = "à " . $_POST["search_city"] . ", Maroc";
+                        }
+                        echo "<h2>";
+                        // 
+                        echo $bricoleursCount . " Résultats ";
+                        echo "<span>";
+                        // 
+                        echo $searchCity;
+                        // 
+                        echo "</span>";
+                        // 
+                        echo "</h2>";
+                        ?>
                         <div id="categories">
                             <div id="categoriesBox">
                                 <p>Catégories</p>
@@ -81,7 +132,33 @@
                         </button>
                     </div>
                     <div class="ResultProfiles">
-                        <div class="ProfileFound">
+                        <?php
+                        // $bricoleurs = getBricoleur();
+                        while ($bricoleur = $bricoleurs->fetch_assoc()) {
+                            echo "<div class='ProfileFound'>";
+                            // 
+                            echo "<div class='PictureProfile'></div>";
+                            echo "<div>";
+                            // 
+                            echo "<b>" . $bricoleur["nom"] . " " . $bricoleur["prenom"] . "</b>";
+                            echo "<br/>";
+                            $sousProfessionsNames = getSousProfessionsNames($bricoleur["id_bricoleur"]);
+                            while ($sousProfessionName = $sousProfessionsNames->fetch_assoc()) {
+                                echo "<button>" . $sousProfessionName["libelle"] . "</button>";
+                            }
+                            echo "<p class='City'>";
+                            // 
+                            echo "<i class='fas'>&#xf3c5;</i> ";
+                            echo $bricoleur["lieu"] . ", Maroc";
+                            // 
+                            echo "</p>";
+                            // 
+                            echo "</div>";
+                            // 
+                            echo "</div>";
+                        }
+                        ?>
+                        <!-- <div class="ProfileFound">
                             <div class="PictureProfile"></div>
                             <div> <b>Jamal Hachim</b><br>
                                 <button>Specialité 1</button>
@@ -103,15 +180,6 @@
                             <div class="PictureProfile"></div>
                             <div> <b>Jamal Hachim</b><br>
                                 <button>Specialité 1</button>
-                                <button>Specialité 2</button>
-                                <p class="City"><i class="fas">&#xf3c5;</i> Safi, Maroc</p>
-                            </div>
-
-                        </div>
-                        <div class="ProfileFound">
-                            <div class="PictureProfile"></div>
-                            <div> <b>Jamal Hachim</b><br>
-                                <button>Specialité 1</button>
                                 <button>Specialité 2</button><br>
                                 <p class="City"><i class="fas">&#xf3c5;</i> Safi, Maroc</p>
                             </div>
@@ -143,7 +211,7 @@
                                 <p class="City"><i class="fas">&#xf3c5;</i> Safi, Maroc</p>
                             </div>
 
-                        </div>
+                        </div> -->
                     </div>
                 </div>
                 <div id="adertisment">
