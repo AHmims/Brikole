@@ -90,6 +90,7 @@ body {
   flex-direction: row;
   justify-content: initial;
   align-items: center;
+  display: none;
 }
 #navBarCont #navBar #mobileLinks .mobileItem {
   background: #FFC000;

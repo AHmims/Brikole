@@ -98,6 +98,7 @@ body {
 
         #mobileLinks {
             @include shared.flex(row, initial, center);
+            display: none;
 
             // 
             .mobileItem {
