@@ -135,7 +135,7 @@
                         <?php
                         // $bricoleurs = getBricoleur();
                         while ($bricoleur = $bricoleurs->fetch_assoc()) {
-                            echo "<div class='ProfileFound'>";
+                            echo "<div class='ProfileFound' data-id=" . $bricoleur["id_bricoleur"] . " data-href='./brikoleur.php?id=" . $bricoleur["id_bricoleur"] . "' style='cursor:pointer;'>";
                             // 
                             echo "<div class='PictureProfile'></div>";
                             echo "<div>";
@@ -255,6 +255,7 @@
     ?>
     <!--  -->
     <script src="public/js/navbar_footer.js"></script>
+    <script src="public/js/searchResult.js"></script>
 </body>
 
 </html>
