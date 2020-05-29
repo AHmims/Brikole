@@ -1,6 +1,6 @@
 <?php
-  // include_once '../includes/Connection.php';
-  // include_once '../includes/Brikoler.php';
+  include_once '../includes/Connection.php';
+  include_once '../includes/Brikoler.php';
 
   // Update Profile
   // $Fname = "";
@@ -33,8 +33,6 @@
   echo "Error updating record: " . mysqli_error($con);
 }
       
-
-
     }catch(Exception $ex){
       echo 'Error Update '.$ex -> getMessage();
     }
@@ -238,20 +236,42 @@
                   <div class="blank"></div>
                   <div class="blank"></div>
                   <div class="blank"></div>
+
+
+                  <!--  -->
+                  <!-- Comments -->
                   <div class="comments">
                     <p class="P0">Commentaires</p>
                     <div class="commentContent">
+                        <!-- query -->
+                        <?php
+                        $Comment_query = "SELECT * FROM `commentaire` WHERE id_bricoleur = 1";
+                        $Comment_Result = mysqli_query($con, $Comment_query);
+                        // Check Connected to db
+                      if (!$Comment_Result) {
+                        printf("Error: %s\n", mysqli_error($con));
+                        exit();
+                      }
+                     ?>
+                  <!-- Give Me All Comments of loged brikoler -->
+                    <?php while($row = mysqli_fetch_assoc($Comment_Result)):?>
+                      <div class="ClientComment">
                       <div class="column commenterImg">
                         <img src="../img/commentPic.png" alt="" />
-                      </div>
+                      </div>                     
                       <div class="column commenterInfo">
                         <p class="P1 commentOwner">Abid Samir</p>
                         <p class="P2 commentText">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit. Curabitur semper nec urna a imperdiet.
+                        <?php echo$row['commentaire'] ?>
                         </p>
                         <p class="commentDate P3"><i>Il y a 2 jours</i></p>
+                        
                       </div>
+                      
+                      
+                      </div>
+                      <?php endwhile; ?>
+                      
                     </div>
                   </div>
                 </div>

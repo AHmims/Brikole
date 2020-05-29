@@ -219,6 +219,9 @@
   font-weight: 500;
 }
 .content .row .column1 .column3 .row1 .column3_2 .comments .commentContent {
+  display: block;
+}
+.ClientComment{
   display: flex;
 }
 .content .row .column1 .column3 .row1 .column3_2 .comments .commentContent .commenterImg {
