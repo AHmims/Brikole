@@ -269,8 +269,11 @@ body {
               p {
                 font-weight: 500;
               }
-              .commentContent {
+              .ClientComment{
                 display: flex;
+              }
+              .commentContent {
+                display: block;
                 .commenterImg {
                   margin-right: 10px;
                 }

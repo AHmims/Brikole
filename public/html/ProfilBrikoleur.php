@@ -62,8 +62,11 @@
       integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
       crossorigin="anonymous"
     />
-    <!-- --------------- -->
 
+    <!-- --------------- -->
+    <!-- Script -->
+  <script src="../js/ProfilBrikoleur.js"></script>
+    <!-- Css -->
     <link rel="stylesheet" href="../css/navbar-footer.css" />
     <link rel="stylesheet" href="../css/ProfilBrikoleur.css" />
     <title>Profil brikoleur</title>
@@ -216,20 +219,71 @@
                         <div class="deletePic">
                           <i class="fas fa-trash-alt"></i>
                         </div>
-                        <div class="addPics">
+                        <!-- NOTE!! -->
+                        <!-- Please upload Pic is INPUT not div -->
+                        <!-- <div class="addPics">
                           <p>
                             <i class="fas fa-camera"></i> Ajouter des photos
                           </p>
-                        </div>
+                        </div> -->
+                        
+                        <!--  -->
+                        <!-- Upload Image -->
+                        <form method="POST" action="" class="addPics" enctype="multipart/form-data">
+                          <!-- <input type="file" name="UploadPortfolio"  accept="image/*" OnChange="showPreview(this)" required> -->
+                          <input type="file" name="UploadPortfolio">
+                          <button type="submit" name="addImage">Ajouter</button>
+                      </form>
                       </div>
                     </span>
+                    <?php 
+                    //check if addImage button is clicked
+                      if(isset($_POST['addImage']))
+                      {
+                        $ImageName = $_FILES['UploadPortfolio']['name'];
+                        $ImagePortfolio_tmp = $_FILES['UploadPortfolio']['tmp_name'];
+                        $folder = '../img/';
+                        move_uploaded_file($ImagePortfolio_tmp,$folder.$ImageName);
+                        $sqlUpluadImg = "INSERT INTO `photo`(`id_bricoleur`, `id_image`, `refrence_image`) VALUES (1,'','$ImageName')";
+                        $qry_res = mysqli_query($con, $sqlUpluadImg);
+
+                        if ($qry_res) {
+                          echo " alert('Image inserted')";
+                          } else {
+                          echo "Error: ",mysqli_error($con);
+                          }
+                    }
+                      ?>
                     <div class="row row-cols-3">
-                      <img src="../img/portfolio1.png" alt="" />
+                    <?php 
+                    // Show me my photos
+                        $sqlquery = "SELECT * FROM `photo` WHERE `id_bricoleur` = 1 ORDER BY id_image DESC";
+                        $Result = mysqli_query($con,$sqlquery); 
+                        if (!$Result) {
+                          printf("Error: %s\n", mysqli_error($con));
+                          exit();
+                      }
+                      ?>                   
+                      <!-- // if ($Result_readImages->num_rows > 0) {
+                      //   while($row = mysqli_fetch_array($Result_readImages))
+                      //   { -->
+                        <?php while($row = mysqli_fetch_assoc($Result)):?>
+                          <img src="../img/<?php echo $row['refrence_image'] ?>.png">
+                          <?php endwhile; ?>
+
+                          <!-- echo '<img src="../img/'$row['IMAGE']. '.png">'; -->
+
+                          <!-- // echo '<img src="data:image/png;base64, ../img/'.base64_encode($row['refrence_image'] ).'"/>'; -->
+                        <!-- }  
+                      }
+                      ?> -->
+                     
+                      <!-- <img src="../img/portfolio1.png" alt="" />
                       <img src="../img/portfolio2.png" alt="" />
                       <img src="../img/portfolio3.png" alt="" />
                       <img src="../img/portfolio4.png" alt="" />
                       <img src="../img/portfolio5.png" alt="" />
-                      <img src="../img/portfolio6.png" alt="" />
+                      <img src="../img/portfolio6.png" alt="" /> -->
                     </div>
                   </div>
                   <div class="blank"></div>
