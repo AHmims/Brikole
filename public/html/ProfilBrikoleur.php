@@ -243,12 +243,16 @@
                         $ImageName = $_FILES['UploadPortfolio']['name'];
                         $ImagePortfolio_tmp = $_FILES['UploadPortfolio']['tmp_name'];
                         $folder = '../img/';
+                        // $id_image=1;
+
                         move_uploaded_file($ImagePortfolio_tmp,$folder.$ImageName);
-                        $sqlUpluadImg = "INSERT INTO `photo`(`id_bricoleur`, `id_image`, `refrence_image`) VALUES (1,'','$ImageName')";
+                        $sqlUpluadImg = "INSERT INTO `image`(`id_image`, `id_bricoleur`, `refrence_image`)VALUES ('',1,'$ImageName')";
+
                         $qry_res = mysqli_query($con, $sqlUpluadImg);
 
                         if ($qry_res) {
                           echo " alert('Image inserted')";
+                          // $id_image++;
                           } else {
                           echo "Error: ",mysqli_error($con);
                           }
@@ -257,26 +261,18 @@
                     <div class="row row-cols-3">
                     <?php 
                     // Show me my photos
-                        $sqlquery = "SELECT * FROM `photo` WHERE `id_bricoleur` = 1 ORDER BY id_image DESC";
+                        $sqlquery = "SELECT * FROM `image` WHERE `id_bricoleur` = 1 ORDER BY id_image DESC";
                         $Result = mysqli_query($con,$sqlquery); 
                         if (!$Result) {
                           printf("Error: %s\n", mysqli_error($con));
                           exit();
                       }
                       ?>                   
-                      <!-- // if ($Result_readImages->num_rows > 0) {
-                      //   while($row = mysqli_fetch_array($Result_readImages))
-                      //   { -->
+                     
                         <?php while($row = mysqli_fetch_assoc($Result)):?>
-                          <img src="../img/<?php echo $row['refrence_image'] ?>.png">
+                          <img src="../img/<?php echo $row['refrence_image'] ?>">
                           <?php endwhile; ?>
-
-                          <!-- echo '<img src="../img/'$row['IMAGE']. '.png">'; -->
-
-                          <!-- // echo '<img src="data:image/png;base64, ../img/'.base64_encode($row['refrence_image'] ).'"/>'; -->
-                        <!-- }  
-                      }
-                      ?> -->
+                      
                      
                       <!-- <img src="../img/portfolio1.png" alt="" />
                       <img src="../img/portfolio2.png" alt="" />
