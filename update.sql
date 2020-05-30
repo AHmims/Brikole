@@ -15,3 +15,10 @@ CREATE TABLE `bricoleur_Sous_Profession` (
   `id_Sprofession` int(11) NOT NULL,
   `id_bricoleur` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+"liveSassCompile.settings.formats":[
+    {
+            "format": "compressed",
+            "extensionName": ".min.css",
+            "savePath": "public/css"
+        }
+]
