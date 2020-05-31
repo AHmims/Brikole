@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="public/css/navbar-footer.css">
     <link rel="stylesheet" href="public/css/SearchResult.css">
+    <link rel="stylesheet" href="public/css/searchResultUpdate.css">
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     <title>Brikole</title>
 </head>
@@ -40,7 +41,7 @@
                             // 
                             if ($selectedIndex == "p:$professionId")
                                 $state = "selected";
-                            echo "<option value='p:$professionId' $state style='background-color:grey'>$professionName</option>";
+                            echo "<option value='p:$professionId' $state class='optionTitle'>$professionName</option>";
                             $state = "";
                             // 
                             $sousProfessions = getSousProfessionsByProfessionId($professionId);
@@ -50,7 +51,7 @@
                                 // 
                                 if ($selectedIndex == "sp:$sousProfessionId")
                                     $state = "selected";
-                                echo "<option value='sp:$sousProfessionId' $state>$sousProfessionName</option>";
+                                echo "<option value='sp:$sousProfessionId' $state class='optionValue'>$sousProfessionName</option>";
                                 $state = "";
                             }
                         }
@@ -133,39 +134,67 @@
                         <?php
                         // $bricoleurs = getBricoleur();
                         while ($bricoleur = $bricoleurs->fetch_assoc()) {
-                            echo "<div class='ProfileFound' data-id=" . $bricoleur["id_bricoleur"] . " data-href='./brikoleur.php?id=" . $bricoleur["id_bricoleur"] . "' style='cursor:pointer;'>";
+                            // echo "<div class='ProfileFound' data-id=" . $bricoleur["id_bricoleur"] . " data-href='./brikoleur.php?id=" . $bricoleur["id_bricoleur"] . "' style='cursor:pointer;'>";
+                            echo "<div class='ProfileFound ProfileFound_U' data-id=" . $bricoleur["id_bricoleur"] . " data-href='./brikoleur.php?id=" . $bricoleur["id_bricoleur"] . "' style='cursor:pointer;'>";
                             // 
-                            echo "<div class='PictureProfile'></div>";
-                            echo "<div>";
+                            // echo "<div class='PictureProfile'></div>";
+                            // echo "<div>";
+                            echo "<div class='PictureProfile_U'>";
+                            $imageName = getProfileImage($bricoleur["id_bricoleur"]);
+                            $imageName = $imageName["refrence_image"];
+                            echo "<img src='./public/img/{$imageName}'/>";
+                            echo "</div>";
                             // 
-                            echo "<b>" . $bricoleur["nom"] . " " . $bricoleur["prenom"] . "</b>";
-                            echo "<br/>";
+                            // echo "<b>" . $bricoleur["nom"] . " " . $bricoleur["prenom"] . "</b>";
+                            // echo "<br/>";
+                            echo "<div class='profile_infos'>";
+                            echo "<span class='profile_name'>" . $bricoleur["nom"] . ' ' . $bricoleur["prenom"] . "</span>";
+                            echo "<div class='profile_details'>";
+                            $professionName = getBricoleurProfession($bricoleur["id_bricoleur"]);
+                            // echo $professionName;
+                            echo "<span>" . $professionName . "</span>";
                             $sousProfessionsNames = getSousProfessionsNames($bricoleur["id_bricoleur"]);
                             while ($sousProfessionName = $sousProfessionsNames->fetch_assoc()) {
-                                echo "<button>" . $sousProfessionName["libelle"] . "</button>";
+                                echo "<span>" . $sousProfessionName["libelle"] . "</span>";
                             }
-                            echo "<p class='City'>";
-                            // 
-                            echo "<i class='fas'>&#xf3c5;</i> ";
-                            echo $bricoleur["lieu"] . ", Maroc";
+                            echo "</div>";
+                            echo "<p class='profile_location'>";
+                            echo '<svg width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.5 0C2.0142 0 0 2.09099 0 4.68105C0 9.15947 4.5 15 4.5 15C4.5 15 9 9.15854 9 4.68105C9 2.09193 6.9858 0 4.5 0ZM4.5 7.27111C3.85552 7.27111 3.23744 7.00426 2.78173 6.52926C2.32602 6.05426 2.07 5.41002 2.07 4.73827C2.07 4.06652 2.32602 3.42229 2.78173 2.94729C3.23744 2.47229 3.85552 2.20544 4.5 2.20544C5.14448 2.20544 5.76256 2.47229 6.21827 2.94729C6.67398 3.42229 6.93 4.06652 6.93 4.73827C6.93 5.41002 6.67398 6.05426 6.21827 6.52926C5.76256 7.00426 5.14448 7.27111 4.5 7.27111Z" fill="#FFC000" />
+                            </svg>';
+                            echo "<span>" . $bricoleur["lieu"] . " , Maroc</span>";
                             // 
                             echo "</p>";
                             // 
                             echo "</div>";
                             // 
                             echo "</div>";
+                            // echo "</div>";
                         }
                         ?>
-                        <!-- <div class="ProfileFound">
-                            <div class="PictureProfile"></div>
-                            <div> <b>Jamal Hachim</b><br>
-                                <button>Specialité 1</button>
-                                <button>Specialité 2</button>
-                                <p class="City"><i class="fas">&#xf3c5;</i> Safi, Maroc</p>
+                        <div class="ProfileFound ProfileFound_U">
+                            <div class="PictureProfile_U">
+                                <img src="./public/img/P1.png" alt="">
+                            </div>
+                            <div class="profile_infos">
+                                <span class="profile_name">Jamal Hachim</span>
+                                <div class="profile_details">
+                                    <span>profession 1</span>
+                                    <span>sous profession 1</span>
+                                    <span>sous profession 2</span>
+                                </div>
+                                <p class="profile_location">
+                                    <svg width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M4.5 0C2.0142 0 0 2.09099 0 4.68105C0 9.15947 4.5 15 4.5 15C4.5 15 9 9.15854 9 4.68105C9 2.09193 6.9858 0 4.5 0ZM4.5 7.27111C3.85552 7.27111 3.23744 7.00426 2.78173 6.52926C2.32602 6.05426 2.07 5.41002 2.07 4.73827C2.07 4.06652 2.32602 3.42229 2.78173 2.94729C3.23744 2.47229 3.85552 2.20544 4.5 2.20544C5.14448 2.20544 5.76256 2.47229 6.21827 2.94729C6.67398 3.42229 6.93 4.06652 6.93 4.73827C6.93 5.41002 6.67398 6.05426 6.21827 6.52926C5.76256 7.00426 5.14448 7.27111 4.5 7.27111Z" fill="#FFC000" />
+                                    </svg>
+                                    <span>
+                                        Safi, Maroc
+                                    </span>
+                                </p>
                             </div>
 
                         </div>
-                        <div class="ProfileFound">
+                        <!-- <div class="ProfileFound">
                             <div class="PictureProfile"></div>
                             <div> <b>Jamal Hachim</b><br>
                                 <button>Specialité 1</button>

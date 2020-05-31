@@ -1,0 +1,81 @@
+.optionTitle,
+.optionValue {
+  color: #2D2D2D;
+  font-style: normal;
+}
+
+.optionTitle {
+  background-color: #e9e9e9;
+  font-weight: bold;
+}
+
+.ProfileFound_U {
+  height: 184px;
+}
+.ProfileFound_U .PictureProfile_U {
+  border-radius: 0;
+  width: 174px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 14px;
+  box-sizing: border-box;
+  margin: 0;
+}
+.ProfileFound_U .PictureProfile_U img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.ProfileFound_U .profile_infos {
+  margin-top: 34px;
+  margin-left: 17px;
+  display: flex;
+  flex-direction: column;
+}
+.ProfileFound_U .profile_infos .profile_name {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  color: #2D2D2D;
+}
+.ProfileFound_U .profile_infos .profile_details span {
+  user-select: none;
+  padding: 1px 6px;
+  font-family: Roboto;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 12px;
+  background: #FDFDFD;
+  border: 1px solid #E9E9E9;
+  border-radius: 15px;
+  color: #868686;
+  text-align: center;
+}
+.ProfileFound_U .profile_infos .profile_details span:not(:last-of-type) {
+  margin-right: 5px;
+}
+.ProfileFound_U .profile_infos .profile_details span:nth-child(1) {
+  border-color: #FFC000;
+  color: #FFC000;
+}
+.ProfileFound_U .profile_location {
+  margin: 0;
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+}
+.ProfileFound_U .profile_location span {
+  margin-left: 5px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 18px;
+  color: #FFC000;
+}
+
+/*# sourceMappingURL=searchresultupdate.css.map */
