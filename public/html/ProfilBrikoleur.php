@@ -23,8 +23,7 @@ function getposts()
 if (isset($_POST['submit'])) {
   $data = getposts();
 
-  $updateProfile_Query = "UPDATE bricoleur SET prenom='$data[0]' ,nom='$data[1]' ,telephone='$data[4]',`lieu`='$data[3]', `description`='$data[5]' WHERE `id_bricoleur` =1;
-    ";
+  $updateProfile_Query = "UPDATE bricoleur SET prenom='$data[0]' ,nom='$data[1]' ,telephone='$data[4]',`lieu`='$data[3]', `description`='$data[5]' WHERE `id_bricoleur` =1;";
   try {
     // $updateProfile_Result = mysqli_query($con,$updateProfile_Query);
     if (mysqli_query($con, $updateProfile_Query)) {
@@ -50,15 +49,15 @@ if (isset($_POST['submit'])) {
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 
-  <<<<<<< HEAD <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js">
-    </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js">
+  </script>
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous" />
-    <!-- --------------- -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous" />
+  <!-- --------------- -->
 
-    <link rel="stylesheet" href="../css/navbar-footer.css" />
-    <link rel="stylesheet" href="../css/ProfilBrikoleur.css" />
-    <title>Profil brikoleur</title>
+  <link rel="stylesheet" href="../css/navbar-footer.css" />
+  <link rel="stylesheet" href="../css/ProfilBrikoleur.css" />
+  <title>Profil brikoleur</title>
 </head>
 
 <body>

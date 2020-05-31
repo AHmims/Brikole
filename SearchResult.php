@@ -126,10 +126,8 @@
                             </div>
 
                         </div>
-                        <button class="OrderResult active">Manouvrier
-                        </button>
-                        <button class="OrderResult">Agence de service
-                        </button>
+                        <button class="OrderResult active">Manouvrier</button>
+                        <button class="OrderResult" disabled>Agence de service</button>
                     </div>
                     <div class="ResultProfiles">
                         <?php
