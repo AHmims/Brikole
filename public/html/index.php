@@ -3,25 +3,41 @@ include '../../includes/Connection2.php';
 
 $db = Database::connect();
 
-$brikoleurs = $db->prepare("SELECT bricoleur.prenom as prenom , bricoleur.nom as nom , image.refrence_image as image , profession.libelle_profession as profession , sp.id_Sprofession as Sprofession , bsp.id_bricoleur
-                            FROM bricoleur 
-                            LEFT JOIN image ON (bricoleur.id_bricoleur = image.id_bricoleur AND image.type_image = 'profile')
-                            LEFT JOIN ((SELECT id_profession , id_Sprofession FROM sous_profession GROUP BY id_profession) as sp , (SELECT id_bricoleur , id_Sprofession FROM bricoleur_sous_profession GROUP BY id_bricoleur) as bsp) 
-                            ON (bricoleur.id_bricoleur = bsp.id_bricoleur AND bsp.id_Sprofession = sp.id_Sprofession)
-                            LEFT JOIN profession ON sp.id_profession = profession.id_profession
-                            ORDER BY RAND() LIMIT 5");                         
+// $query1 = "SELECT bricoleur.prenom as prenom , bricoleur.nom as nom , image.refrence_image as image , profession.libelle_profession as profession , sp.id_Sprofession as Sprofession , bsp.id_bricoleur
+//         FROM bricoleur 
+//         LEFT JOIN image ON (bricoleur.id_bricoleur = image.id_bricoleur AND image.type_image = 'profile')
+//         LEFT JOIN ((SELECT id_profession , id_Sprofession FROM sous_profession GROUP BY id_profession) as sp , (SELECT id_bricoleur , id_Sprofession FROM bricoleur_sous_profession GROUP BY id_bricoleur) as bsp) 
+//         ON (bricoleur.id_bricoleur = bsp.id_bricoleur AND bsp.id_Sprofession = sp.id_Sprofession)
+//         LEFT JOIN profession ON sp.id_profession = profession.id_profession
+//         ORDER BY RAND() LIMIT 5"
+
+$query1 = "SELECT bricoleur.prenom as prenom , bricoleur.nom as nom , image.refrence_image as image , profession.libelle_profession as profession 
+        FROM bricoleur 
+        LEFT JOIN image ON (bricoleur.id_bricoleur = image.id_bricoleur AND image.type_image = 'profile')
+        LEFT JOIN association_2 ON bricoleur.id_bricoleur = association_2.id_bricoleur
+        LEFT JOIN profession ON association_2.id_profession = profession.id_profession
+        ORDER BY RAND() LIMIT 5";
+
+$brikoleurs = $db->prepare($query1);                         
 
 $brikoleurs->execute();
 
 $empty = "";
 
-$query = "SELECT bricoleur.prenom as prenom , bricoleur.nom as nom , imageProfile.refrence_image as imageProfile , GROUP_CONCAT(imagePortfolio.refrence_image) as imagePortfolio , profession.libelle_profession as profession , sp.id_Sprofession as Sprofession , bsp.id_bricoleur
-FROM bricoleur 
-LEFT JOIN image as imageProfile ON (bricoleur.id_bricoleur = imageProfile.id_bricoleur AND imageProfile.type_image = 'profile')
-LEFT JOIN (image as imagePortfolio) ON (bricoleur.id_bricoleur = imagePortfolio.id_bricoleur AND imagePortfolio.type_image = 'portfolio')
-LEFT JOIN ((SELECT id_profession , id_Sprofession FROM sous_profession GROUP BY id_profession) as sp , (SELECT id_bricoleur , id_Sprofession FROM bricoleur_sous_profession GROUP BY id_bricoleur) as bsp) 
-ON (bricoleur.id_bricoleur = bsp.id_bricoleur AND bsp.id_Sprofession = sp.id_Sprofession)
-LEFT JOIN profession ON sp.id_profession = profession.id_profession ";
+// $query2 = "SELECT bricoleur.prenom as prenom , bricoleur.nom as nom , imageProfile.refrence_image as imageProfile , GROUP_CONCAT(imagePortfolio.refrence_image) as imagePortfolio , profession.libelle_profession as profession , sp.id_Sprofession as Sprofession , bsp.id_bricoleur
+//         FROM bricoleur 
+//         LEFT JOIN image as imageProfile ON (bricoleur.id_bricoleur = imageProfile.id_bricoleur AND imageProfile.type_image = 'profile')
+//         LEFT JOIN (image as imagePortfolio) ON (bricoleur.id_bricoleur = imagePortfolio.id_bricoleur AND imagePortfolio.type_image = 'portfolio')
+//         LEFT JOIN ((SELECT id_profession , id_Sprofession FROM sous_profession GROUP BY id_profession) as sp , (SELECT id_bricoleur , id_Sprofession FROM bricoleur_sous_profession GROUP BY id_bricoleur) as bsp) 
+//         ON (bricoleur.id_bricoleur = bsp.id_bricoleur AND bsp.id_Sprofession = sp.id_Sprofession)
+//         LEFT JOIN profession ON sp.id_profession = profession.id_profession ";
+
+$query2 = "SELECT bricoleur.prenom as prenom , bricoleur.nom as nom , imageProfile.refrence_image as imageProfile , GROUP_CONCAT(imagePortfolio.refrence_image) as imagePortfolio , profession.libelle_profession as profession 
+        FROM bricoleur 
+        LEFT JOIN image as imageProfile ON (bricoleur.id_bricoleur = imageProfile.id_bricoleur AND imageProfile.type_image = 'profile')
+        LEFT JOIN (image as imagePortfolio) ON (bricoleur.id_bricoleur = imagePortfolio.id_bricoleur AND imagePortfolio.type_image = 'portfolio')
+        LEFT JOIN association_2 ON bricoleur.id_bricoleur = association_2.id_bricoleur
+        LEFT JOIN profession ON association_2.id_profession = profession.id_profession ";
 
 
 
@@ -249,7 +265,7 @@ $db = Database::disconnect();
 
                             $currentId = $recentResId->{'id'};
                             $db = Database::connect();
-                            $searchedBrikoleurs = $db->prepare($query."WHERE bricoleur.id_bricoleur = $currentId");
+                            $searchedBrikoleurs = $db->prepare($query2."WHERE bricoleur.id_bricoleur = $currentId");
                             $searchedBrikoleurs->execute();
                             $db = Database::disconnect();
 
