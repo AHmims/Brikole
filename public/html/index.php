@@ -290,11 +290,11 @@ $db = Database::disconnect();
                             <?php 
                                 }
                             }else{ ?>
-                                <div>Pas de recherche récentes.</div>
+                                <div style="font-family: 'Roboto', sans-serif;">Pas de recherches récentes.</div>
                             <?php }
                         }
                     }else{?>
-                        <div>Pas de recherche récentes.</div>
+                        <div style="font-family: 'Roboto', sans-serif;">Pas de recherches récentes.</div>
                     <?php } ?>
                 
                 <!-- <div class="contentRecentItem" style="background-image: url('../img/recent1.png');">
