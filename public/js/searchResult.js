@@ -29,6 +29,8 @@ if (document.getElementsByClassName('ProfileFound')) {
 
                 }
                 if (!exists) {
+                    if (coockieData.length == 5)
+                        coockieData.splice(0, 1);
                     coockieData.push({
                         id: profiles[i].getAttribute('data-id'),
                         date: new Date().toJSON().slice(0, 19).replace('T', ' ')
