@@ -1,6 +1,5 @@
 //-------------------------------------------------------
 //FILL PORTFOLIO WITH PHOTOS
-
 let portfolioPicsTable = [
   "../img/portfolio1.png",
   "../img/portfolio2.png",
@@ -56,3 +55,18 @@ function scrollPosition() {
   });
 }
 scrollPosition();
+
+
+// function showPreview(ele) {
+//   $("#imgPortfolio").attr("src", ele.value); // for IE
+//   if (ele.files && ele.files[0]) {
+
+//     var reader = new FileReader();
+
+//     reader.onload = function (e) {
+//       $("#imgPortfolio").attr("src", e.target.result);
+//     }
+
+//     reader.readAsDataURL(ele.files[0]);
+//   }
+// }
