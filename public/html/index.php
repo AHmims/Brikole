@@ -14,8 +14,8 @@ $db = Database::connect();
 $query1 = "SELECT bricoleur.prenom as prenom , bricoleur.nom as nom , image.refrence_image as image , profession.libelle_profession as profession 
         FROM bricoleur 
         LEFT JOIN image ON (bricoleur.id_bricoleur = image.id_bricoleur AND image.type_image = 'profile')
-        LEFT JOIN association_2 ON bricoleur.id_bricoleur = association_2.id_bricoleur
-        LEFT JOIN profession ON association_2.id_profession = profession.id_profession
+        LEFT JOIN bricoleur_profession ON bricoleur.id_bricoleur = bricoleur_profession.id_bricoleur
+        LEFT JOIN profession ON bricoleur_profession.id_profession = profession.id_profession
         ORDER BY RAND() LIMIT 5";
 
 $brikoleurs = $db->prepare($query1);                         
@@ -36,8 +36,8 @@ $query2 = "SELECT bricoleur.prenom as prenom , bricoleur.nom as nom , imageProfi
         FROM bricoleur 
         LEFT JOIN image as imageProfile ON (bricoleur.id_bricoleur = imageProfile.id_bricoleur AND imageProfile.type_image = 'profile')
         LEFT JOIN (image as imagePortfolio) ON (bricoleur.id_bricoleur = imagePortfolio.id_bricoleur AND imagePortfolio.type_image = 'portfolio')
-        LEFT JOIN association_2 ON bricoleur.id_bricoleur = association_2.id_bricoleur
-        LEFT JOIN profession ON association_2.id_profession = profession.id_profession ";
+        LEFT JOIN bricoleur_profession ON bricoleur.id_bricoleur = bricoleur_profession.id_bricoleur
+        LEFT JOIN profession ON bricoleur_profession.id_profession = profession.id_profession ";
 
 
 
