@@ -1,5 +1,5 @@
 <?php
-include '../Includes/Connection2.php';
+include '../../includes/Connection2.php';
 
 $db = Database::connect();
 
@@ -44,7 +44,7 @@ $db = Database::disconnect();
 </head>
 
 <body>
-    <nav id="navBarCont">
+    <!-- <nav id="navBarCont">
         <div id="navBar">
             <a href="/">
                 <img src="../icon/logo-full.svg" alt="BriKoleLogo" />
@@ -57,7 +57,8 @@ $db = Database::disconnect();
                 <li href="#" class="navBarLink navBarButton">Nous Rejoindre</li>
             </ul>
         </div>
-    </nav>
+    </nav> -->
+
     <div id="content">
         <div id="contentMain">
             <div id="contentLeft">
@@ -393,7 +394,8 @@ $db = Database::disconnect();
             </div>
         </div> -->
     </div>
-    <div id="footerCont">
+    
+    <!-- <div id="footerCont">
         <div id="footer">
             <a href="/" class="footerLogo">
                 <svg width="114" height="40" viewBox="0 0 114 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -480,7 +482,7 @@ $db = Database::disconnect();
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 </body>
 
 </html>
