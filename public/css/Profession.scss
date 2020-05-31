@@ -1,0 +1,289 @@
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+#conteneurProf {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 90px;
+    height: auto;
+    //overflow: scroll;
+
+    img {
+        width: 90px;
+        height: 90px;
+        display: block;
+    }
+
+    #parag {
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 42px;
+        color: #2D2D2D;
+        text-align: start;
+    }
+
+    #ZoneProf {
+        height: 450px;
+        overflow: auto;
+        width: 100%;
+
+        .PartieRadCheck {
+            font-family: 'Roboto', sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            margin: 15px 25%;
+
+            label {
+                font-weight: 800;
+                font-size: 20px;
+                color: black;
+            }
+
+            input {
+                margin: .7rem;
+                font-family: 'Roboto', sans-serif;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                color: red;
+
+            }
+
+            .Check {
+                display: none;
+                margin-left: 10%;
+
+                input~ :checked {
+                    background-color: #F0B500;
+                }
+
+                label {
+                    font-family: 'Roboto', sans-serif;
+                    font-weight: 600;
+                    font-size: 16px;
+                    color: black;
+                }
+
+            }
+        }
+
+    }
+}
+
+#divButt {
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    #annulation {
+        width: 250px;
+        height: 50px;
+        font-family: 'Roboto', sans-serif;
+        color: #868686;
+        background: #F4F4F4;
+        border: 1px solid #E9E9E9;
+        border-bottom: 3px solid #E9E9E9;
+        font-weight: 500;
+        font-size: 18px;
+        letter-spacing: 0.02em;
+        font-style: normal;
+
+        @media screen and (max-width:768px) {
+            width: 190px;
+        }
+
+        @media screen and (max-width:425px) {
+            width: 175px;
+            // margin-top: 40px;
+        }
+    }
+
+    #confirmation {
+        color: white;
+        width: 250px;
+        height: 50px;
+        margin-left: 10px;
+        font-family: 'Roboto', sans-serif;
+        background: #FFC000;
+        border: 1px solid #F0B500;
+        border-bottom: 3px solid #F0B500;
+        font-weight: 500;
+        font-size: 18px;
+        letter-spacing: 0.02em;
+        font-style: normal;
+
+        @media screen and (max-width:768px) {
+            width: 190px;
+        }
+
+        @media screen and (max-width:425px) {
+            width: 175px;
+            // margin-top: 40px;
+        }
+    }
+}
+
+.blank {
+    width: 100%;
+    height: 45px;
+}
+
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+
+
+
+//                                      Css Partie RadioButton
+
+/* Hide the browser's default radio button */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input~.checkmark {
+    background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked~.checkmark {
+    background-color: #F0B500;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked~.checkmark:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//               Partie Css CheckButton
+.container1 {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container1 input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.container1:hover input~.checkmark1 {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container1 input:checked~.checkmark1 {
+    background-color: #F0B500;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark1:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.container1 input:checked~.checkmark1:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.container1 .checkmark1:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}

@@ -54,7 +54,7 @@ body {
   width: -moz-fit-content;
   width: fit-content;
   margin: 0 auto;
-  margin-top: 90px;
+  margin-top: 45px;
 }
 
 #conteneurIns img {
@@ -70,14 +70,14 @@ body {
 }
 
 #conteneurIns #ligne {
-  margin-top: 390px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 #conteneurIns .divInput {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 50px;
   width: 100%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -189,6 +189,7 @@ body {
   font-weight: 500;
   font-size: 18px;
   letter-spacing: 0.02em;
+  font-style: normal;
 }
 
 @media screen and (max-width: 768px) {
@@ -215,6 +216,7 @@ body {
   font-weight: 500;
   font-size: 18px;
   letter-spacing: 0.02em;
+  font-style: normal;
 }
 
 @media screen and (max-width: 768px) {
@@ -236,7 +238,7 @@ body {
   font-size: 16px;
   line-height: 19px;
   color: #535353;
-  margin-top: -3px;
+  margin: 0;
 }
 
 #conteneurIns #parag2 span {

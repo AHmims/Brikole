@@ -34,7 +34,7 @@ body {
 
     .divInput {
         display: flex;
-        height: 50px;
+        //height: 50px;
         width: 100%;
         box-sizing: border-box;
         display: flex;
@@ -55,7 +55,7 @@ body {
             font-weight: normal;
             font-size: 14px;
             line-height: 16px;
-            
+
 
         }
 
@@ -79,6 +79,7 @@ body {
                 font-weight: 500;
                 font-size: 18px;
                 letter-spacing: 0.02em;
+                font-style: normal;
             }
 
             #confirmation {
@@ -95,12 +96,15 @@ body {
                 font-weight: 500;
                 font-size: 18px;
                 letter-spacing: 0.02em;
+                font-style: normal;
             }
         }
     }
 
     #ligne1 {
-        margin-top: 123px;
+        //margin-top: 123px;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
 
     #parag2 {
@@ -110,6 +114,7 @@ body {
         font-size: 16px;
         line-height: 19px;
         color: #535353;
+        margin: 0;
 
         span {
             text-decoration: underline;

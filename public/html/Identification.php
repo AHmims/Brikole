@@ -33,9 +33,9 @@
                         $ligne = mysqli_fetch_assoc($res);
                         if($rows==1){
                         $_SESSION['idBrikoleur']=$ligne["id_bricoleur"];
-                        // $a= $_SESSION['idBrikoleur'];
-                        // echo $a;
-                        //header('Location:http://localhost/Brikole/public/html/inscription.php');
+                        $a= $_SESSION['idBrikoleur'];
+                        //echo $a;
+                        header('Location:PR.php');
                         }
                         else echo '<script>alert("Email ou mot de passe est incorret")</script>';
             }   
@@ -67,7 +67,7 @@
                         <input type="submit" value="LOGIN >" name="BTNLOGIN" id="confirmation">
                     </div>
                 </div>
-                <div id="ligne1" >
+                <div id="ligne1">
                     <svg  width="416" height="18" viewBox="0 0 416 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <circle cx="208" cy="9" r="3" fill="#E9E9E9" />
                         <circle cx="208" cy="9" r="8.5" stroke="#E9E9E9" />

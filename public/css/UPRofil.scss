@@ -1,0 +1,241 @@
+#conteneurUProfil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 90px;
+    width: 40%;
+    height: auto;
+    //overflow: scroll;
+
+    img {
+        width: 90px;
+        height: 90px;
+        display: block;
+    }
+
+    #parag {
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 42px;
+        color: #2D2D2D;
+        text-align: start;
+    }
+
+    #ZoneImgBio {
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 90%;
+        //margin-top: 5%;
+        height: auto;
+
+        #left {
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
+            font-family: 'Roboto', sans-serif;
+
+            #left_img_file {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+
+                img {
+                    width: 180px;
+                    height: auto;
+                    // border-radius: 120px;
+                    // -webkit-border-radius: 120px;
+                    // -moz-border-radius: 120px;
+                    // -ms-border-radius: 120px;
+                    // -o-border-radius: 120px;
+                    margin: 0 auto;
+                }
+
+                .button-wrapper {
+                    position: relative;
+                    width: auto;
+                    text-align: center;
+                    margin: auto 15px;
+
+                }
+
+                .button-wrapper span.label {
+                    margin-left: 40px;
+                    position: relative;
+                    z-index: 0;
+                    display: inline-block;
+                    width: 100%;
+                    background: #FFC000;
+                    cursor: pointer;
+                    color: #fff;
+                    padding: 10px 10px;
+                    text-transform: uppercase;
+                    font-size: 12px;
+                    font-family: 'Roboto', sans-serif;
+
+                }
+
+                #upload {
+                    display: inline-block;
+                    position: absolute;
+                    z-index: 1;
+                    width: 100%;
+                    height: 50px;
+                    top: 0;
+                    left: 0;
+                    opacity: 0;
+                    cursor: pointer;
+                }
+            }
+
+
+
+
+
+        }
+
+        #right {
+            margin: 0 auto;
+
+            width: 100%;
+
+            .ui-input-container {
+                background-color: #fff;
+                width: 100%;
+
+                //padding: 1rem;
+                border-radius: 5px;
+                margin: 0 20px;
+                -webkit-border-radius: 5px;
+                -moz-border-radius: 5px;
+                -ms-border-radius: 5px;
+                -o-border-radius: 5px;
+            }
+
+            .ui-form-input-container {
+                position: relative;
+                font-size: 1rem;
+                margin-bottom: 15px;
+                display: block;
+            }
+
+            .ui-form-input {
+                padding: 13px 15px;
+                border-radius: 8px;
+                border: 2px solid #FFC000;
+                outline: 0;
+                width: 100%;
+            }
+
+            .form-input-label {
+                position: absolute;
+                top: -7px;
+                left: 10px;
+                color: #868686;
+                //font-size: 0.85rem;
+                font-size: 19px;
+                font-family: 'Roboto', sans-serif;
+                padding-right: 0.33rem;
+                padding-left: 0.33rem;
+                background: #fff;
+                transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+                font-family: sans-serif;
+                text-transform: capitalize;
+            }
+
+            textarea {
+                min-height: 9em;
+                max-height: 70vh;
+                width: 100%;
+            }
+        }
+
+
+    }
+
+    #divButt {
+        width: 100%;
+        height: 50px;
+        margin-top: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        #annulation {
+            width: 250px;
+            height: 50px;
+            font-family: 'Roboto', sans-serif;
+            color: #868686;
+            background: #F4F4F4;
+            border: 1px solid #E9E9E9;
+            border-bottom: 3px solid #E9E9E9;
+            font-weight: 500;
+            font-size: 18px;
+            letter-spacing: 0.02em;
+            font-style: normal;
+
+            @media screen and (max-width:768px) {
+                width: 190px;
+            }
+
+            @media screen and (max-width:425px) {
+                width: 175px;
+                // margin-top: 40px;
+            }
+        }
+
+        #confirmation {
+            color: white;
+            width: 250px;
+            height: 50px;
+            margin-left: 10px;
+            font-family: 'Roboto', sans-serif;
+            background: #FFC000;
+            border: 1px solid #F0B500;
+            border-bottom: 3px solid #F0B500;
+            font-weight: 500;
+            font-size: 18px;
+            letter-spacing: 0.02em;
+            font-style: normal;
+
+            @media screen and (max-width:768px) {
+                width: 190px;
+            }
+
+            @media screen and (max-width:425px) {
+                width: 175px;
+                // margin-top: 40px;
+            }
+        }
+    }
+}
+
+#footerCont {
+    margin-top: 70px;
+    flex: none;
+
+    @media screen and (max-width:1024px) {
+        //margin-top: 20px;
+        width: 100%;
+    }
+
+    @media screen and (max-width:425) {
+        //margin-top: 15px;
+        width: 100%;
+        //margin-top: 20px;
+    }
+
+    .mobileItem {
+        @media screen and (max-width:425) {
+            //margin-top: 15px;
+            width: 80px;
+        }
+    }
+}
