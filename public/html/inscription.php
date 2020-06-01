@@ -1,7 +1,7 @@
 <?php
      session_start();
     // Create connection
-    $conn = new mysqli("localhost", "root", "", "bd_brikole");  
+    $conn = new mysqli("localhost", "root", "", "brikole");  
     if ($conn->connect_error) {
         die("Connection failed: " . $conn->connect_error);
     } 
@@ -29,8 +29,8 @@
                     $res2 = mysqli_query($conn, $sqlmax);
                     $ligne = mysqli_fetch_assoc($res2);
                     $_SESSION['id_Brikoleur_inscription']=$ligne["num"];
-                    echo '<script>alert("'.$_SESSION['id_Brikoleur_inscription'].'")</script>';
-                    // header('Location:PR.php');
+                    // echo '<script>alert("'.$_SESSION['id_Brikoleur_inscription'].'")</script>';
+                    header('Location:Profession.php');
                     //die('<script>window("Inscription Bien fait !!")</script>');
                 }
                 else echo '<script>alert("Email est déjà Existant")</script>';

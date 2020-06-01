@@ -13,14 +13,15 @@
         session_start();
         include 'header.php';
         
-        $conn = new mysqli("localhost", "root", "", "bd_brikole");  
+        $conn = new mysqli("localhost", "root", "", "brikole");  
             if ($conn->connect_error) {
                 die("Connection failed: " . $conn->connect_error);
             }
         if(isset($_POST['BTNVal']))
         {
-            echo $_SESSION['id_Brikoleur_inscription'];
+            //echo $_SESSION['id_Brikoleur_inscription'];
             $id_brik = $_SESSION['id_Brikoleur_inscription'];
+            $_SESSION['idBrikoleur'] = $id_brik;
             $bio = $_POST['Bio'];
             $ImgP = time() .'_'.  $_FILES['upload']['name'];
             $cible = '../img/Img_Profil_Brikoleur/'.$ImgP;
@@ -32,10 +33,13 @@
             $resSP = mysqli_query($conn, $req);
             if($bio != ""){
                 $reqBio = "UPDATE bricoleur SET `description` = '.$bio' WHERE `bricoleur`.`id_bricoleur` = '$id_brik' ";
-            }
+            }   
             $resSP = mysqli_query($conn, $reqBio);
+            //echo '<script>window.location.href = "ProfilBrikoleur.php"; </script>';
+            //header('Location:ProfilBrikoleur.php');
         }
-        $_SESSION['idBrikoleur'] = $id_brik;
+        
+        
     ?>
     <div id="conteneurUProfil">
         <img src="../icon/logo-min.svg" alt="BriKoleLogo" />

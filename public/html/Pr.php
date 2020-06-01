@@ -19,7 +19,7 @@
         <img src="../icon/logo-min.svg" alt="BriKoleLogo" />
         <p id="parag">Selectionnez votre profession:</p>
         <?php 
-            $conn = new mysqli("localhost", "root", "", "bd_brikole");  
+            $conn = new mysqli("localhost", "root", "", "brikole");  
             if ($conn->connect_error) {
                 die("Connection failed: " . $conn->connect_error);
             }
