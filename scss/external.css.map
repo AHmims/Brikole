@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,OAAO,CAAC,qGAAI",
-    "sources": [
-        "external.scss"
-    ],
-    "names": [],
-    "file": "external.css"
-}

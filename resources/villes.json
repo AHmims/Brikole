@@ -1,0 +1,1855 @@
+[{
+    "id": 0,
+    "ville": "Khouribga"
+}, {
+    "id": 1,
+    "ville": "Safi"
+}, {
+    "id": 2,
+    "ville": "Fès"
+}, {
+    "id": 3,
+    "ville": "Kénitra"
+}, {
+    "id": 4,
+    "ville": "Casablanca"
+}, {
+    "id": 5,
+    "ville": "Salé"
+}, {
+    "id": 6,
+    "ville": "El Jadida"
+}, {
+    "id": 7,
+    "ville": "Marrakech"
+}, {
+    "id": 8,
+    "ville": "Meknès"
+}, {
+    "id": 9,
+    "ville": "Oujda"
+}, {
+    "id": 10,
+    "ville": "Tétouan"
+}, {
+    "id": 11,
+    "ville": "Rabat"
+}, {
+    "id": 12,
+    "ville": "Agadir"
+}, {
+    "id": 13,
+    "ville": "Béni Mellal"
+}, {
+    "id": 14,
+    "ville": "Tanger"
+}, {
+    "id": 15,
+    "ville": "Taza"
+}, {
+    "id": 16,
+    "ville": "Al Hoceima"
+}, {
+    "id": 17,
+    "ville": "Errachidia"
+}, {
+    "id": 18,
+    "ville": "Khénifra"
+}, {
+    "id": 19,
+    "ville": "Larache"
+}, {
+    "id": 20,
+    "ville": "Nador"
+}, {
+    "id": 21,
+    "ville": "Ouarzazate"
+}, {
+    "id": 22,
+    "ville": "Settat"
+}, {
+    "id": 23,
+    "ville": "Ain Aouda"
+}, {
+    "id": 24,
+    "ville": "Ain Harrouda"
+}, {
+    "id": 25,
+    "ville": "Ait Baha"
+}, {
+    "id": 26,
+    "ville": "Ait Melloul"
+}, {
+    "id": 27,
+    "ville": "Al Haouz"
+}, {
+    "id": 28,
+    "ville": "Aousserd"
+}, {
+    "id": 29,
+    "ville": "Arfoud"
+}, {
+    "id": 30,
+    "ville": "Assa zag"
+}, {
+    "id": 31,
+    "ville": "Azemmour"
+}, {
+    "id": 32,
+    "ville": "Azilal"
+}, {
+    "id": 33,
+    "ville": "Azrou"
+}, {
+    "id": 34,
+    "ville": "Ben Ahmed"
+}, {
+    "id": 35,
+    "ville": "Ben Guerir"
+}, {
+    "id": 36,
+    "ville": "Benslimane"
+}, {
+    "id": 37,
+    "ville": "Berkane"
+}, {
+    "id": 38,
+    "ville": "Berrechid"
+}, {
+    "id": 39,
+    "ville": "Bin El Ouidane"
+}, {
+    "id": 40,
+    "ville": "Bir Jdid"
+}, {
+    "id": 41,
+    "ville": "Boujdour"
+}, {
+    "id": 42,
+    "ville": "Boujniba"
+}, {
+    "id": 43,
+    "ville": "Boulanouar"
+}, {
+    "id": 44,
+    "ville": "Boulmane"
+}, {
+    "id": 45,
+    "ville": "Bouskoura"
+}, {
+    "id": 46,
+    "ville": "Bousselham"
+}, {
+    "id": 47,
+    "ville": "Bouznika"
+}, {
+    "id": 48,
+    "ville": "Chefchaouen"
+}, {
+    "id": 49,
+    "ville": "Chichaoua"
+}, {
+    "id": 50,
+    "ville": "Dakhla"
+}, {
+    "id": 51,
+    "ville": "Dar Chaffai"
+}, {
+    "id": 52,
+    "ville": "Deroua"
+}, {
+    "id": 53,
+    "ville": "El Borouj"
+}, {
+    "id": 54,
+    "ville": "El Hajeb"
+}, {
+    "id": 55,
+    "ville": "El Mansouria"
+}, {
+    "id": 56,
+    "ville": "El Gara"
+}, {
+    "id": 57,
+    "ville": "Es-Semara"
+}, {
+    "id": 58,
+    "ville": "Essaouira"
+}, {
+    "id": 59,
+    "ville": "Figuig"
+}, {
+    "id": 60,
+    "ville": "Fnideq"
+}, {
+    "id": 61,
+    "ville": "Fquih Ben Saleh"
+}, {
+    "id": 62,
+    "ville": "Goulmima"
+}, {
+    "id": 63,
+    "ville": "Guelmim"
+}, {
+    "id": 64,
+    "ville": "Guercif"
+}, {
+    "id": 65,
+    "ville": "Had Soualem"
+}, {
+    "id": 66,
+    "ville": "Ifrane"
+}, {
+    "id": 67,
+    "ville": "Imouzzer"
+}, {
+    "id": 68,
+    "ville": "Inzegan"
+}, {
+    "id": 69,
+    "ville": "Jamaat Shaim"
+}, {
+    "id": 70,
+    "ville": "Jrada"
+}, {
+    "id": 71,
+    "ville": "Khemisset"
+}, {
+    "id": 72,
+    "ville": "Ksar el-Kebir"
+}, {
+    "id": 73,
+    "ville": "Ksar es-Seghir"
+}, {
+    "id": 74,
+    "ville": "Lagouira"
+}, {
+    "id": 75,
+    "ville": "Lakhiaita"
+}, {
+    "id": 76,
+    "ville": "Laâyoune"
+}, {
+    "id": 77,
+    "ville": "Martil"
+}, {
+    "id": 78,
+    "ville": "Mediouna"
+}, {
+    "id": 79,
+    "ville": "Mehdia"
+}, {
+    "id": 80,
+    "ville": "Merzouga"
+}, {
+    "id": 81,
+    "ville": "Mdiq"
+}, {
+    "id": 82,
+    "ville": "Midelt"
+}, {
+    "id": 83,
+    "ville": "Mirleft"
+}, {
+    "id": 84,
+    "ville": "Missour"
+}, {
+    "id": 85,
+    "ville": "Mohammedia"
+}, {
+    "id": 86,
+    "ville": "Moulay Bousselham"
+}, {
+    "id": 87,
+    "ville": "Moulay Yaccoub"
+}, {
+    "id": 88,
+    "ville": "Nouaceur"
+}, {
+    "id": 89,
+    "ville": "Ouad Eddahab"
+}, {
+    "id": 90,
+    "ville": "Oualidia"
+}, {
+    "id": 91,
+    "ville": "Ouazzane"
+}, {
+    "id": 92,
+    "ville": "Oued Zem"
+}, {
+    "id": 93,
+    "ville": "Ouled Frej"
+}, {
+    "id": 94,
+    "ville": "Outat El Haj"
+}, {
+    "id": 95,
+    "ville": "Rissani"
+}, {
+    "id": 96,
+    "ville": "Saidia"
+}, {
+    "id": 97,
+    "ville": "Sala Al-Jadida"
+}, {
+    "id": 98,
+    "ville": "Sebt Gzoula"
+}, {
+    "id": 99,
+    "ville": "Sefrou"
+}, {
+    "id": 100,
+    "ville": "Selouane"
+}, {
+    "id": 101,
+    "ville": "Sidi Bennour"
+}, {
+    "id": 102,
+    "ville": "Sidi Bouzid"
+}, {
+    "id": 103,
+    "ville": "Sidi el Aîdi"
+}, {
+    "id": 104,
+    "ville": "Sidi Hajjaj"
+}, {
+    "id": 105,
+    "ville": "Sidi Ifni"
+}, {
+    "id": 106,
+    "ville": "Sidi Kacem"
+}, {
+    "id": 107,
+    "ville": "Sidi Slimane"
+}, {
+    "id": 108,
+    "ville": "Sidi Yahya El Gharb"
+}, {
+    "id": 109,
+    "ville": "Skhirat"
+}, {
+    "id": 110,
+    "ville": "Taghazout"
+}, {
+    "id": 111,
+    "ville": "Zagora"
+}, {
+    "id": 112,
+    "ville": "Tamaris"
+}, {
+    "id": 113,
+    "ville": "Tamensourt"
+}, {
+    "id": 114,
+    "ville": "Tamesna"
+}, {
+    "id": 115,
+    "ville": "Tamouda Bay"
+}, {
+    "id": 116,
+    "ville": "Tan-Tan"
+}, {
+    "id": 117,
+    "ville": "Taounate"
+}, {
+    "id": 118,
+    "ville": "Taourirt"
+}, {
+    "id": 119,
+    "ville": "Tarfaya"
+}, {
+    "id": 120,
+    "ville": "Taroudant"
+}, {
+    "id": 121,
+    "ville": "Tata"
+}, {
+    "id": 122,
+    "ville": "Temara"
+}, {
+    "id": 123,
+    "ville": "Temsia"
+}, {
+    "id": 124,
+    "ville": "Tifelt"
+}, {
+    "id": 125,
+    "ville": "Tikiouine"
+}, {
+    "id": 126,
+    "ville": "Tiznit"
+}, {
+    "id": 127,
+    "ville": "Youssoufia"
+}, {
+    "id": 128,
+    "ville": "Zemamra"
+}, {
+    "id": 129,
+    "ville": "Ahlaf"
+}, {
+    "id": 130,
+    "ville": "Ain Tizgha"
+}, {
+    "id": 131,
+    "ville": "Bir Ennasr"
+}, {
+    "id": 132,
+    "ville": "Cherrat"
+}, {
+    "id": 133,
+    "ville": "Fdalate"
+}, {
+    "id": 134,
+    "ville": "Mellila"
+}, {
+    "id": 135,
+    "ville": "Moualine El Oued"
+}, {
+    "id": 136,
+    "ville": "Oulad Al Toualaa"
+}, {
+    "id": 137,
+    "ville": "Oulad Yahya Louta"
+}, {
+    "id": 138,
+    "ville": "Sidi Bettache"
+}, {
+    "id": 139,
+    "ville": "Ziaida"
+}, {
+    "id": 140,
+    "ville": "Ben Maachou"
+}, {
+    "id": 141,
+    "ville": "Laghnimyine"
+}, {
+    "id": 142,
+    "ville": "Oulad Abbou"
+}, {
+    "id": 143,
+    "ville": "Oulad Zidane"
+}, {
+    "id": 144,
+    "ville": "Sahel Oulad H'riz"
+}, {
+    "id": 145,
+    "ville": "Sidi El Mekki"
+}, {
+    "id": 146,
+    "ville": "Sidi Rahal"
+}, {
+    "id": 147,
+    "ville": "Sidi Rahal Chatai"
+}, {
+    "id": 148,
+    "ville": "Bejaad"
+}, {
+    "id": 149,
+    "ville": "El Foqra"
+}, {
+    "id": 150,
+    "ville": "Hattane"
+}, {
+    "id": 151,
+    "ville": "Oulad Aissa"
+}, {
+    "id": 152,
+    "ville": "Oulad Ftata"
+}, {
+    "id": 153,
+    "ville": "Bni Khloug"
+}, {
+    "id": 154,
+    "ville": "Guisser"
+}, {
+    "id": 155,
+    "ville": "Khemisset Chaouia"
+}, {
+    "id": 156,
+    "ville": "Loulad"
+}, {
+    "id": 157,
+    "ville": "N'khila"
+}, {
+    "id": 158,
+    "ville": "Oulad Fares"
+}, {
+    "id": 159,
+    "ville": "Oulad Said"
+}, {
+    "id": 160,
+    "ville": "Rima"
+}, {
+    "id": 161,
+    "ville": "Sidi Boumehdi"
+}, {
+    "id": 162,
+    "ville": "Sidi Dahbi"
+}, {
+    "id": 163,
+    "ville": "Boulaouane"
+}, {
+    "id": 164,
+    "ville": "Chaibate"
+}, {
+    "id": 165,
+    "ville": "Chtouka"
+}, {
+    "id": 166,
+    "ville": "Haouzia"
+}, {
+    "id": 167,
+    "ville": "Lamharza Essahel"
+}, {
+    "id": 168,
+    "ville": "Lbir Jdid"
+}, {
+    "id": 169,
+    "ville": "Moulay Abdallah"
+}, {
+    "id": 170,
+    "ville": "Oulad Frej"
+}, {
+    "id": 171,
+    "ville": "Oulad Ghanem"
+}, {
+    "id": 172,
+    "ville": "Oulad Hamdane"
+}, {
+    "id": 173,
+    "ville": "Oulad Hcine"
+}, {
+    "id": 174,
+    "ville": "Sidi Abed"
+}, {
+    "id": 175,
+    "ville": "Sidi Ali Ben Hamdouche"
+}, {
+    "id": 176,
+    "ville": "Sidi Smail"
+}, {
+    "id": 177,
+    "ville": "Ayir"
+}, {
+    "id": 178,
+    "ville": "Bouguedra"
+}, {
+    "id": 179,
+    "ville": "El Beddouza"
+}, {
+    "id": 180,
+    "ville": "Hrara"
+}, {
+    "id": 181,
+    "ville": "Jemaa Shaim"
+}, {
+    "id": 182,
+    "ville": "Lamaachate"
+}, {
+    "id": 183,
+    "ville": "Saadla"
+}, {
+    "id": 184,
+    "ville": "Khmis Ksiba"
+}, {
+    "id": 185,
+    "ville": "Kridid"
+}, {
+    "id": 186,
+    "ville": "Laaounate"
+}, {
+    "id": 187,
+    "ville": "Echemmaia"
+}, {
+    "id": 188,
+    "ville": "Lakhoualqa"
+}, {
+    "id": 189,
+    "ville": "Ras El Ain"
+}, {
+    "id": 190,
+    "ville": "Sidi Chiker"
+}, {
+    "id": 191,
+    "ville": "Boulemane"
+}, {
+    "id": 192,
+    "ville": "Guigou"
+}, {
+    "id": 193,
+    "ville": "Imouzzer Marmoucha"
+}, {
+    "id": 194,
+    "ville": "Ksabi Moulouya"
+}, {
+    "id": 195,
+    "ville": "Skoura M'daz"
+}, {
+    "id": 196,
+    "ville": "Moulay Yaâcoub"
+}, {
+    "id": 197,
+    "ville": "Adrej"
+}, {
+    "id": 198,
+    "ville": "Ahl Sidi Lahcen"
+}, {
+    "id": 199,
+    "ville": "Ain Cheggag"
+}, {
+    "id": 200,
+    "ville": "Bhalil"
+}, {
+    "id": 201,
+    "ville": "Bir Tam Tam"
+}, {
+    "id": 202,
+    "ville": "El Menzel"
+}, {
+    "id": 203,
+    "ville": "Imouzzer-Kendar"
+}, {
+    "id": 204,
+    "ville": "Kandar Sidi Khiar"
+}, {
+    "id": 205,
+    "ville": "Ribat el Kheir"
+}, {
+    "id": 206,
+    "ville": "Ain Bida"
+}, {
+    "id": 207,
+    "ville": "Méchouar Fès Jdid"
+}, {
+    "id": 208,
+    "ville": "Skhinate"
+}, {
+    "id": 209,
+    "ville": "Arbaoua"
+}, {
+    "id": 210,
+    "ville": "Beni Malek"
+}, {
+    "id": 211,
+    "ville": "Mograne"
+}, {
+    "id": 212,
+    "ville": "Sidi Allal Tazi"
+}, {
+    "id": 213,
+    "ville": "Sidi Taibi"
+}, {
+    "id": 214,
+    "ville": "Souk Tlet El Gharb"
+}, {
+    "id": 215,
+    "ville": "Dar Gueddari"
+}, {
+    "id": 216,
+    "ville": "Had Kourt"
+}, {
+    "id": 217,
+    "ville": "Jorf El Melha"
+}, {
+    "id": 218,
+    "ville": "Mechra Bel Ksiri"
+}, {
+    "id": 219,
+    "ville": "Ameur Seflia"
+}, {
+    "id": 220,
+    "ville": "Dar Bel Amri"
+}, {
+    "id": 221,
+    "ville": "Sidi Yahya"
+}, {
+    "id": 222,
+    "ville": "El Majjatia Ouled Taleb"
+}, {
+    "id": 223,
+    "ville": "Lahraouyine"
+}, {
+    "id": 224,
+    "ville": "Sidi Hajjaj Oued Hassar"
+}, {
+    "id": 225,
+    "ville": "Tit Mellil"
+}, {
+    "id": 226,
+    "ville": "Dar Bouazza"
+}, {
+    "id": 227,
+    "ville": "Errahma"
+}, {
+    "id": 228,
+    "ville": "Lamkansa"
+}, {
+    "id": 229,
+    "ville": "Oulad Salah"
+}, {
+    "id": 230,
+    "ville": "Béni Yakhlef"
+}, {
+    "id": 231,
+    "ville": "Chellalate"
+}, {
+    "id": 232,
+    "ville": "Sidi Moussa Ben Ali"
+}, {
+    "id": 233,
+    "ville": "Sidi Moussa El Majdoub"
+}, {
+    "id": 234,
+    "ville": "Assa"
+}, {
+    "id": 235,
+    "ville": "Zag"
+}, {
+    "id": 236,
+    "ville": "Abaynou"
+}, {
+    "id": 237,
+    "ville": "Aferkat"
+}, {
+    "id": 238,
+    "ville": "Bouizakarne"
+}, {
+    "id": 239,
+    "ville": "Fask"
+}, {
+    "id": 240,
+    "ville": "Ifrane Atlas Saghir"
+}, {
+    "id": 241,
+    "ville": "Tagante"
+}, {
+    "id": 242,
+    "ville": "Timoulay"
+}, {
+    "id": 243,
+    "ville": "Abteh"
+}, {
+    "id": 244,
+    "ville": "El Outia"
+}, {
+    "id": 245,
+    "ville": "Akka"
+}, {
+    "id": 246,
+    "ville": "Amalou"
+}, {
+    "id": 247,
+    "ville": "Foum zguid"
+}, {
+    "id": 248,
+    "ville": "Issafen"
+}, {
+    "id": 249,
+    "ville": "Tlite"
+}, {
+    "id": 250,
+    "ville": "Dcheira"
+}, {
+    "id": 251,
+    "ville": "El Marsa"
+}, {
+    "id": 252,
+    "ville": "Foum El Oued"
+}, {
+    "id": 253,
+    "ville": "Laäyoune Ain Tizgha"
+}, {
+    "id": 254,
+    "ville": "Akhfennir"
+}, {
+    "id": 255,
+    "ville": "Daoura"
+}, {
+    "id": 256,
+    "ville": "Abadou"
+}, {
+    "id": 257,
+    "ville": "Ait Ourir"
+}, {
+    "id": 258,
+    "ville": "Ait Sidi Daoud"
+}, {
+    "id": 259,
+    "ville": "Amghras"
+}, {
+    "id": 260,
+    "ville": "Amizmiz"
+}, {
+    "id": 261,
+    "ville": "Asni"
+}, {
+    "id": 262,
+    "ville": "Dar Jamaa"
+}, {
+    "id": 263,
+    "ville": "Ghmate"
+}, {
+    "id": 264,
+    "ville": "Ijoukak"
+}, {
+    "id": 265,
+    "ville": "Ouirgane"
+}, {
+    "id": 266,
+    "ville": "Oukaimden"
+}, {
+    "id": 267,
+    "ville": "Oulad Mtaa"
+}, {
+    "id": 268,
+    "ville": "Ourika"
+}, {
+    "id": 269,
+    "ville": "Sidi Abdallah Ghiat"
+}, {
+    "id": 270,
+    "ville": "Tahannaout"
+}, {
+    "id": 271,
+    "ville": "Talat N'yaaqoub"
+}, {
+    "id": 272,
+    "ville": "Tamazouzte"
+}, {
+    "id": 273,
+    "ville": "Tameslohte"
+}, {
+    "id": 274,
+    "ville": "Tazart"
+}, {
+    "id": 275,
+    "ville": "Touama"
+}, {
+    "id": 276,
+    "ville": "Assahrij"
+}, {
+    "id": 277,
+    "ville": "Dzouz"
+}, {
+    "id": 278,
+    "ville": "El Kelâa des Sraghna"
+}, {
+    "id": 279,
+    "ville": "Laatamna"
+}, {
+    "id": 280,
+    "ville": "Laattaouia"
+}, {
+    "id": 281,
+    "ville": "Laattaouia Ech-Chaybia"
+}, {
+    "id": 282,
+    "ville": "Sidi Aissa Ben Slimane"
+}, {
+    "id": 283,
+    "ville": "Tamallalt"
+}, {
+    "id": 284,
+    "ville": "Zemrane"
+}, {
+    "id": 285,
+    "ville": "Adaghas"
+}, {
+    "id": 286,
+    "ville": "Bizdad"
+}, {
+    "id": 287,
+    "ville": "Bouzemmour"
+}, {
+    "id": 288,
+    "ville": "El Hanchane"
+}, {
+    "id": 289,
+    "ville": "Had Dra"
+}, {
+    "id": 290,
+    "ville": "Kechoula"
+}, {
+    "id": 291,
+    "ville": "Korimate"
+}, {
+    "id": 292,
+    "ville": "Moulay Bouzarqtoune"
+}, {
+    "id": 293,
+    "ville": "Ounagha"
+}, {
+    "id": 294,
+    "ville": "Takate"
+}, {
+    "id": 295,
+    "ville": "Talmest"
+}, {
+    "id": 296,
+    "ville": "Imindounit"
+}, {
+    "id": 297,
+    "ville": "Imintanoute"
+}, {
+    "id": 298,
+    "ville": "Irohalen"
+}, {
+    "id": 299,
+    "ville": "Issen"
+}, {
+    "id": 300,
+    "ville": "Majjat"
+}, {
+    "id": 301,
+    "ville": "Sid L'mokhtar"
+}, {
+    "id": 302,
+    "ville": "Akarma"
+}, {
+    "id": 303,
+    "ville": "Jaidate"
+}, {
+    "id": 304,
+    "ville": "Ras Ain Rhamna"
+}, {
+    "id": 305,
+    "ville": "Sidi Boubker"
+}, {
+    "id": 306,
+    "ville": "Sidi Bou Othmane"
+}, {
+    "id": 307,
+    "ville": "Skhour Rhamna"
+}, {
+    "id": 308,
+    "ville": "Agafay"
+}, {
+    "id": 309,
+    "ville": "Ait Imour"
+}, {
+    "id": 310,
+    "ville": "Kattara"
+}, {
+    "id": 311,
+    "ville": "Loudaya"
+}, {
+    "id": 312,
+    "ville": "Méchouar Kasba"
+}, {
+    "id": 313,
+    "ville": "Ouahat Sidi Brahim"
+}, {
+    "id": 314,
+    "ville": "Ouled Dlim"
+}, {
+    "id": 315,
+    "ville": "Saada"
+}, {
+    "id": 316,
+    "ville": "Sid Zouine"
+}, {
+    "id": 317,
+    "ville": "Souihla"
+}, {
+    "id": 318,
+    "ville": "Tassoultante"
+}, {
+    "id": 319,
+    "ville": "Agourai"
+}, {
+    "id": 320,
+    "ville": "Ain Taoujdate"
+}, {
+    "id": 321,
+    "ville": "Ait Boubidmane"
+}, {
+    "id": 322,
+    "ville": "Ait Yaazem"
+}, {
+    "id": 323,
+    "ville": "Bitit"
+}, {
+    "id": 324,
+    "ville": "Iqaddar"
+}, {
+    "id": 325,
+    "ville": "Ras Ijerri"
+}, {
+    "id": 326,
+    "ville": "Sabaa Aiyoun"
+}, {
+    "id": 327,
+    "ville": "Aarab Sebbah Gheris"
+}, {
+    "id": 328,
+    "ville": "Aarab Sebbah Ziz"
+}, {
+    "id": 329,
+    "ville": "Aghbalou N'kerdous"
+}, {
+    "id": 330,
+    "ville": "Boudnib"
+}, {
+    "id": 331,
+    "ville": "Er-Rissani"
+}, {
+    "id": 332,
+    "ville": "Fezna"
+}, {
+    "id": 333,
+    "ville": "Jorf"
+}, {
+    "id": 334,
+    "ville": "Lkheng"
+}, {
+    "id": 335,
+    "ville": "Sidi Ali"
+}, {
+    "id": 336,
+    "ville": "Tadighoust"
+}, {
+    "id": 337,
+    "ville": "Tinejdad"
+}, {
+    "id": 338,
+    "ville": "Aguelmous"
+}, {
+    "id": 339,
+    "ville": "Ait Ishaq"
+}, {
+    "id": 340,
+    "ville": "Had Bouhssoussen"
+}, {
+    "id": 341,
+    "ville": "Moulay Bouazza"
+}, {
+    "id": 342,
+    "ville": "Mrir't"
+}, {
+    "id": 343,
+    "ville": "Ouaoumana"
+}, {
+    "id": 344,
+    "ville": "Aghbalou"
+}, {
+    "id": 345,
+    "ville": "Ait Ben Yacoub"
+}, {
+    "id": 346,
+    "ville": "Boumia"
+}, {
+    "id": 347,
+    "ville": "Er-Rich"
+}, {
+    "id": 348,
+    "ville": "Itzer"
+}, {
+    "id": 349,
+    "ville": "Zaida"
+}, {
+    "id": 350,
+    "ville": "Ain Leuh"
+}, {
+    "id": 351,
+    "ville": "Ben Smim"
+}, {
+    "id": 352,
+    "ville": "Oued Ifrane"
+}, {
+    "id": 353,
+    "ville": "Sidi El Makhfi"
+}, {
+    "id": 354,
+    "ville": "Timahdite"
+}, {
+    "id": 355,
+    "ville": "Ain Karma"
+}, {
+    "id": 356,
+    "ville": "Ain Orma"
+}, {
+    "id": 357,
+    "ville": "Boufkrane"
+}, {
+    "id": 358,
+    "ville": "M'haya"
+}, {
+    "id": 359,
+    "ville": "Moulay Driss Zerhoun"
+}, {
+    "id": 360,
+    "ville": "Oualili"
+}, {
+    "id": 361,
+    "ville": "Oued Jdida"
+}, {
+    "id": 362,
+    "ville": "Ouislane"
+}, {
+    "id": 363,
+    "ville": "Aghbal"
+}, {
+    "id": 364,
+    "ville": "Ahfir"
+}, {
+    "id": 365,
+    "ville": "Ain Erreggada"
+}, {
+    "id": 366,
+    "ville": "Aklim"
+}, {
+    "id": 367,
+    "ville": "Boughriba"
+}, {
+    "id": 368,
+    "ville": "Chouihia"
+}, {
+    "id": 369,
+    "ville": "Fezouane"
+}, {
+    "id": 370,
+    "ville": "Madagh"
+}, {
+    "id": 371,
+    "ville": "Sidi Slimane Echcharraa"
+}, {
+    "id": 372,
+    "ville": "Tafoughalt"
+}, {
+    "id": 373,
+    "ville": "Azlaf"
+}, {
+    "id": 374,
+    "ville": "Ben Taieb"
+}, {
+    "id": 375,
+    "ville": "Bni Marghnine"
+}, {
+    "id": 376,
+    "ville": "Boudinar"
+}, {
+    "id": 377,
+    "ville": "Dar El Kebdani"
+}, {
+    "id": 378,
+    "ville": "Driouch"
+}, {
+    "id": 379,
+    "ville": "Iferni"
+}, {
+    "id": 380,
+    "ville": "Midar"
+}, {
+    "id": 381,
+    "ville": "Tafersit"
+}, {
+    "id": 382,
+    "ville": "Temsamane"
+}, {
+    "id": 383,
+    "ville": "Tsaft"
+}, {
+    "id": 384,
+    "ville": "Abbou Lakhal"
+}, {
+    "id": 385,
+    "ville": "Bni Tadjite"
+}, {
+    "id": 386,
+    "ville": "Bouanane"
+}, {
+    "id": 387,
+    "ville": "Bouarfa"
+}, {
+    "id": 388,
+    "ville": "Talsint"
+}, {
+    "id": 389,
+    "ville": "Tendrara"
+}, {
+    "id": 390,
+    "ville": "Ain Bni Mathar"
+}, {
+    "id": 391,
+    "ville": "Bni Mathar"
+}, {
+    "id": 392,
+    "ville": "Guenfouda"
+}, {
+    "id": 393,
+    "ville": "Touissit"
+}, {
+    "id": 394,
+    "ville": "Al Aaroui"
+}, {
+    "id": 395,
+    "ville": "Arekmane"
+}, {
+    "id": 396,
+    "ville": "Bni Ansar"
+}, {
+    "id": 397,
+    "ville": "Bni Chiker"
+}, {
+    "id": 398,
+    "ville": "Farkhana"
+}, {
+    "id": 399,
+    "ville": "Hassi Berkane"
+}, {
+    "id": 400,
+    "ville": "Jaadar"
+}, {
+    "id": 401,
+    "ville": "Ras el Ma"
+}, {
+    "id": 402,
+    "ville": "Zaïo"
+}, {
+    "id": 403,
+    "ville": "Zeghanghane"
+}, {
+    "id": 404,
+    "ville": "Al Oioun Sidi Mellouk"
+}, {
+    "id": 405,
+    "ville": "Debdou"
+}, {
+    "id": 406,
+    "ville": "Mestegmer"
+}, {
+    "id": 407,
+    "ville": "Ain Sfa"
+}, {
+    "id": 408,
+    "ville": "Bni Drar"
+}, {
+    "id": 409,
+    "ville": "Bsara"
+}, {
+    "id": 410,
+    "ville": "Mestferki"
+}, {
+    "id": 411,
+    "ville": "Naima"
+}, {
+    "id": 412,
+    "ville": "Sidi Boulenouar"
+}, {
+    "id": 413,
+    "ville": "Aghouinite"
+}, {
+    "id": 414,
+    "ville": "Tichla"
+}, {
+    "id": 415,
+    "ville": "Zoug"
+}, {
+    "id": 416,
+    "ville": "Ain Johra"
+}, {
+    "id": 417,
+    "ville": "Ain Sbit"
+}, {
+    "id": 418,
+    "ville": "Ait Belkacem"
+}, {
+    "id": 419,
+    "ville": "Ait Bouyahya El Hajjama"
+}, {
+    "id": 420,
+    "ville": "Ait Ichou"
+}, {
+    "id": 421,
+    "ville": "Ait Malek"
+}, {
+    "id": 422,
+    "ville": "Ait Mimoun"
+}, {
+    "id": 423,
+    "ville": "Ait Ouribel"
+}, {
+    "id": 424,
+    "ville": "Ait Yadine"
+}, {
+    "id": 425,
+    "ville": "Brachoua"
+}, {
+    "id": 426,
+    "ville": "Ezzhiliga"
+}, {
+    "id": 427,
+    "ville": "Houderrane"
+}, {
+    "id": 428,
+    "ville": "Khemis Sidi Yahya"
+}, {
+    "id": 429,
+    "ville": "Laghoualem"
+}, {
+    "id": 430,
+    "ville": "M'qam Tobla"
+}, {
+    "id": 431,
+    "ville": "Maaziz"
+}, {
+    "id": 432,
+    "ville": "Marchouch"
+}, {
+    "id": 433,
+    "ville": "Moulay Driss Aghbal"
+}, {
+    "id": 434,
+    "ville": "Oulmes"
+}, {
+    "id": 435,
+    "ville": "Rommani"
+}, {
+    "id": 436,
+    "ville": "Sfassif"
+}, {
+    "id": 437,
+    "ville": "Sidi Abderrazak"
+}, {
+    "id": 438,
+    "ville": "Sidi Allal El Bahraoui"
+}, {
+    "id": 439,
+    "ville": "Sidi Boukhalkhal"
+}, {
+    "id": 440,
+    "ville": "Tiddas"
+}, {
+    "id": 441,
+    "ville": "Sidi Bouknadel"
+}, {
+    "id": 442,
+    "ville": "Ain Attig"
+}, {
+    "id": 443,
+    "ville": "El Menzeh"
+}, {
+    "id": 444,
+    "ville": "Mers El Kheir"
+}, {
+    "id": 445,
+    "ville": "Sabbah"
+}, {
+    "id": 446,
+    "ville": "Sidi Yahya Zaer"
+}, {
+    "id": 447,
+    "ville": "Ait Amira"
+}, {
+    "id": 448,
+    "ville": "Ait Milk"
+}, {
+    "id": 449,
+    "ville": "Belfaa"
+}, {
+    "id": 450,
+    "ville": "Biougra"
+}, {
+    "id": 451,
+    "ville": "Inchaden"
+}, {
+    "id": 452,
+    "ville": "Massa"
+}, {
+    "id": 453,
+    "ville": "Sidi Abdallah El Bouchouari"
+}, {
+    "id": 454,
+    "ville": "Sidi Bibi"
+}, {
+    "id": 455,
+    "ville": "Sidi Ouassay"
+}, {
+    "id": 456,
+    "ville": "Amerzgane"
+}, {
+    "id": 457,
+    "ville": "Ighrem N'ougdal"
+}, {
+    "id": 458,
+    "ville": "Skoura Ahl El Oust"
+}, {
+    "id": 459,
+    "ville": "Taznakht"
+}, {
+    "id": 460,
+    "ville": "Anfeg"
+}, {
+    "id": 461,
+    "ville": "Lakhssas"
+}, {
+    "id": 462,
+    "ville": "Sbouya"
+}, {
+    "id": 463,
+    "ville": "Sebt Ennabour"
+}, {
+    "id": 464,
+    "ville": "Tangarfa"
+}, {
+    "id": 465,
+    "ville": "Tighirt"
+}, {
+    "id": 466,
+    "ville": "Adar"
+}, {
+    "id": 467,
+    "ville": "Agadir Melloul"
+}, {
+    "id": 468,
+    "ville": "Ahmar Laglalcha"
+}, {
+    "id": 469,
+    "ville": "Aoulouz"
+}, {
+    "id": 470,
+    "ville": "Aït Iaaza"
+}, {
+    "id": 471,
+    "ville": "El Guerdane"
+}, {
+    "id": 472,
+    "ville": "Freija"
+}, {
+    "id": 473,
+    "ville": "Imoulass"
+}, {
+    "id": 474,
+    "ville": "Lagfifat"
+}, {
+    "id": 475,
+    "ville": "Lakhnafif"
+}, {
+    "id": 476,
+    "ville": "Lamhadi"
+}, {
+    "id": 477,
+    "ville": "Machraa El Ain"
+}, {
+    "id": 478,
+    "ville": "Ouled Berhil"
+}, {
+    "id": 479,
+    "ville": "Ouled Teïma"
+}, {
+    "id": 480,
+    "ville": "Sidi Ahmed Ou Amar"
+}, {
+    "id": 481,
+    "ville": "Sidi Boaal"
+}, {
+    "id": 482,
+    "ville": "Taliouine"
+}, {
+    "id": 483,
+    "ville": "Talmakante"
+}, {
+    "id": 484,
+    "ville": "Tataoute"
+}, {
+    "id": 485,
+    "ville": "Tazemmourt"
+}, {
+    "id": 486,
+    "ville": "Zaouia Sidi Tahar"
+}, {
+    "id": 487,
+    "ville": "Ait Youl"
+}, {
+    "id": 488,
+    "ville": "Alnif"
+}, {
+    "id": 489,
+    "ville": "Boumalne-Dadès"
+}, {
+    "id": 490,
+    "ville": "Imider"
+}, {
+    "id": 491,
+    "ville": "Kalaat M'gouna"
+}, {
+    "id": 492,
+    "ville": "Ouaklim"
+}, {
+    "id": 493,
+    "ville": "Taghzoute N'ait Atta"
+}, {
+    "id": 494,
+    "ville": "Tinghir"
+}, {
+    "id": 495,
+    "ville": "Arbaa Sahel"
+}, {
+    "id": 496,
+    "ville": "Bounaamane"
+}, {
+    "id": 497,
+    "ville": "El Maader El Kabir"
+}, {
+    "id": 498,
+    "ville": "Souk El Arbaa"
+}, {
+    "id": 499,
+    "ville": "Tafraout"
+}, {
+    "id": 500,
+    "ville": "Taghzout"
+}, {
+    "id": 501,
+    "ville": "Tnine Aglou"
+}, {
+    "id": 502,
+    "ville": "Agdz"
+}, {
+    "id": 503,
+    "ville": "Ait Ouallal"
+}, {
+    "id": 504,
+    "ville": "Fezouata"
+}, {
+    "id": 505,
+    "ville": "M'hamid El Ghizlane"
+}, {
+    "id": 506,
+    "ville": "Tamezmoute"
+}, {
+    "id": 507,
+    "ville": "Amskroud"
+}, {
+    "id": 508,
+    "ville": "Aourir"
+}, {
+    "id": 509,
+    "ville": "Aqesri"
+}, {
+    "id": 510,
+    "ville": "Drargua"
+}, {
+    "id": 511,
+    "ville": "Imsouane"
+}, {
+    "id": 512,
+    "ville": "Tamri"
+}, {
+    "id": 513,
+    "ville": "Dcheïra El Jihadia"
+}, {
+    "id": 514,
+    "ville": "Lqliaa"
+}, {
+    "id": 515,
+    "ville": "Oulad Dahou"
+}, {
+    "id": 516,
+    "ville": "Afourar"
+}, {
+    "id": 517,
+    "ville": "Bni Ayat"
+}, {
+    "id": 518,
+    "ville": "Bni Hassane"
+}, {
+    "id": 519,
+    "ville": "Demnate"
+}, {
+    "id": 520,
+    "ville": "Foum Jemaa"
+}, {
+    "id": 521,
+    "ville": "Imlil"
+}, {
+    "id": 522,
+    "ville": "Ouaouizeght"
+}, {
+    "id": 523,
+    "ville": "Rfala"
+}, {
+    "id": 524,
+    "ville": "Tabant"
+}, {
+    "id": 525,
+    "ville": "Tanant"
+}, {
+    "id": 526,
+    "ville": "Timoulilt"
+}, {
+    "id": 527,
+    "ville": "Aghbala"
+}, {
+    "id": 528,
+    "ville": "Dir El Ksiba"
+}, {
+    "id": 529,
+    "ville": "El Ksiba"
+}, {
+    "id": 530,
+    "ville": "Foum Oudi"
+}, {
+    "id": 531,
+    "ville": "Kasba Tadla"
+}, {
+    "id": 532,
+    "ville": "Naour"
+}, {
+    "id": 533,
+    "ville": "Oulad M'barek"
+}, {
+    "id": 534,
+    "ville": "Oulad Said L'oued"
+}, {
+    "id": 535,
+    "ville": "Oulad Yaich"
+}, {
+    "id": 536,
+    "ville": "Oulad Youssef"
+}, {
+    "id": 537,
+    "ville": "Sidi Jaber"
+}, {
+    "id": 538,
+    "ville": "Zaouïat Cheikh"
+}, {
+    "id": 539,
+    "ville": "Bradia"
+}, {
+    "id": 540,
+    "ville": "Dar Ould Zidouh"
+}, {
+    "id": 541,
+    "ville": "Had Boumoussa"
+}, {
+    "id": 542,
+    "ville": "Oulad M'rah"
+}, {
+    "id": 543,
+    "ville": "Ouled Ayad"
+}, {
+    "id": 544,
+    "ville": "Sidi Aissa Ben Ali"
+}, {
+    "id": 545,
+    "ville": "Souk Sebt Ouled Nemma"
+}, {
+    "id": 546,
+    "ville": "Zoumi"
+}, {
+    "id": 547,
+    "ville": "Amtar"
+}, {
+    "id": 548,
+    "ville": "Bab Berred"
+}, {
+    "id": 549,
+    "ville": "Bab Taza"
+}, {
+    "id": 550,
+    "ville": "Bni Bouzra"
+}, {
+    "id": 551,
+    "ville": "Bni Salah"
+}, {
+    "id": 552,
+    "ville": "Mansoura"
+}, {
+    "id": 553,
+    "ville": "Ouaouzgane"
+}, {
+    "id": 554,
+    "ville": "Oued Malha"
+}, {
+    "id": 555,
+    "ville": "Steha"
+}, {
+    "id": 556,
+    "ville": "Tamorot"
+}, {
+    "id": 557,
+    "ville": "Tizgane"
+}, {
+    "id": 558,
+    "ville": "Anjra"
+}, {
+    "id": 559,
+    "ville": "Laaouama"
+}, {
+    "id": 560,
+    "ville": "Laouamra"
+}, {
+    "id": 561,
+    "ville": "Rissana Janoubia"
+}, {
+    "id": 562,
+    "ville": "Souaken"
+}, {
+    "id": 563,
+    "ville": "Tatoft"
+}, {
+    "id": 564,
+    "ville": "Azla"
+}, {
+    "id": 565,
+    "ville": "Bni Harchen"
+}, {
+    "id": 566,
+    "ville": "Dar Bni Karrich"
+}, {
+    "id": 567,
+    "ville": "Jbel Lahbib"
+}, {
+    "id": 568,
+    "ville": "Mallalienne"
+}, {
+    "id": 569,
+    "ville": "Oued Laou"
+}, {
+    "id": 570,
+    "ville": "Zaouiat Sidi Kacem"
+}, {
+    "id": 571,
+    "ville": "Allyene"
+}, {
+    "id": 572,
+    "ville": "Cabo Negro"
+}, {
+    "id": 573,
+    "ville": "M'sick"
+}, {
+    "id": 574,
+    "ville": "Aquouass Briech"
+}, {
+    "id": 575,
+    "ville": "Asilah"
+}, {
+    "id": 576,
+    "ville": "Boukhalef"
+}, {
+    "id": 577,
+    "ville": "Gueznaia"
+}, {
+    "id": 578,
+    "ville": "Lkhaloua"
+}, {
+    "id": 579,
+    "ville": "Sahel Chamali"
+}, {
+    "id": 580,
+    "ville": "Sidi Lyamani"
+}, {
+    "id": 581,
+    "ville": "Abdelghaya Souahel"
+}, {
+    "id": 582,
+    "ville": "Chakrane"
+}, {
+    "id": 583,
+    "ville": "Imrabten"
+}, {
+    "id": 584,
+    "ville": "Imzouren"
+}, {
+    "id": 585,
+    "ville": "Issaguen"
+}, {
+    "id": 586,
+    "ville": "Izemmouren"
+}, {
+    "id": 587,
+    "ville": "Ketama"
+}, {
+    "id": 588,
+    "ville": "Louta"
+}, {
+    "id": 589,
+    "ville": "Tamsaout"
+}, {
+    "id": 590,
+    "ville": "Targuist"
+}, {
+    "id": 591,
+    "ville": "Tifarouine"
+}, {
+    "id": 592,
+    "ville": "Barkine"
+}, {
+    "id": 593,
+    "ville": "Houara Oulad Raho"
+}, {
+    "id": 594,
+    "ville": "Saka"
+}, {
+    "id": 595,
+    "ville": "Ain Legdah"
+}, {
+    "id": 596,
+    "ville": "Bouadel"
+}, {
+    "id": 597,
+    "ville": "Galaz"
+}, {
+    "id": 598,
+    "ville": "Ghafsai"
+}, {
+    "id": 599,
+    "ville": "Karia Ba Mohamed"
+}, {
+    "id": 600,
+    "ville": "Messassa"
+}, {
+    "id": 601,
+    "ville": "Mkansa"
+}, {
+    "id": 602,
+    "ville": "Ratba"
+}, {
+    "id": 603,
+    "ville": "Sidi El Abed"
+}, {
+    "id": 604,
+    "ville": "Tabouda"
+}, {
+    "id": 605,
+    "ville": "Tamedit"
+}, {
+    "id": 606,
+    "ville": "Thar Es-Souk"
+}, {
+    "id": 607,
+    "ville": "Tissa"
+}, {
+    "id": 608,
+    "ville": "Ajdir"
+}, {
+    "id": 609,
+    "ville": "Aknoul"
+}, {
+    "id": 610,
+    "ville": "Bni Ftah"
+}, {
+    "id": 611,
+    "ville": "Ghiata Al Gharbia"
+}, {
+    "id": 612,
+    "ville": "Gzenaya Al Janoubia"
+}, {
+    "id": 613,
+    "ville": "Meknassa Acharqia"
+}, {
+    "id": 614,
+    "ville": "Meknassa Al Gharbia"
+}, {
+    "id": 615,
+    "ville": "Oued Amlil"
+}, {
+    "id": 616,
+    "ville": "Smia"
+}, {
+    "id": 617,
+    "ville": "Tahla"
+}]
