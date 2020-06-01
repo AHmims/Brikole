@@ -10,8 +10,11 @@
 </head>
 <body>
     <?php 
+        session_start();
         include 'header.php';
+        
     ?>
+    <form action="" method="POST">
     <div id="conteneurProf">
         <img src="../icon/logo-min.svg" alt="BriKoleLogo" />
         <p id="parag">Selectionnez votre profession:</p>
@@ -23,42 +26,105 @@
             // --------------------Requete ts les prefessions; 
             $sql1 = "SELECT * FROM profession";
             $res1 = mysqli_query($conn, $sql1);
-            echo'<div id="ZoneProf">';
-            while($ligne = mysqli_fetch_assoc($res1)){
-                echo'<div class="PartieRadCheck">
-                <input class="Radio" type="radio" class="Profession" name="drone" value="Profession1">
-                <label for="Profession1">'.$ligne["libelle_profession"].'</label>';
+            ?>
+            <div id="ZoneProf">
+            <?php while($ligne = mysqli_fetch_assoc($res1)):?>
+                <div class="PartieRadCheck">
+                <label value="<?php echo $ligne["libelle_profession"] ;?>" class="container"><?php echo $ligne["libelle_profession"] ;?>
+                    <input type="radio" class="Radio"  name="radio" value="<?php echo $ligne["id_profession"] ;?>">
+                    <span class="checkmark"></span>
+                </label>
+                <?php
                 $id_prof = $ligne["id_profession"];
-                $sql = "SELECT libelle FROM profession , sous_profession where profession.id_profession = sous_profession.id_profession AND profession.id_profession ='$id_prof'";
+                $sql = "SELECT * FROM profession , sous_profession where profession.id_profession = sous_profession.id_profession AND profession.id_profession ='$id_prof'";
                 $res = mysqli_query($conn, $sql);
                 $rows = $rows =mysqli_num_rows($res);
-                if($rows>=1){
-                    while($enreg = mysqli_fetch_assoc($res)){
-                        echo'<div class="Check" id="AChraf">
-                        <div>
-                            <input type="checkbox" id="scales" name="scales">
-                            <label for="scales">'.$enreg["libelle"].'</label>
-                        </div>
-                        </div>';
-                    }
-                }
-                echo'</div>';
-            }
-            echo'</div>';
-            
-            
-        ?>
+                ?>
+                <?php if($rows>=1): ?>
+                    <?php while($enreg = mysqli_fetch_assoc($res)):?>
+                        <div class="Check">
+                                <label class="container1">
+                                    <?php echo $enreg["libelle"];?>
+                                    <input type="checkbox" name="check[]" class="Check InputB" value="<?php echo $enreg["id_Sprofession"]; ?>">
+                                    <span class="checkmark1"></span>
+                                </label>
+                        </div>  
+                    <?php endwhile; ?>
+                <?php endif; ?>
+                </div>
+            <?php endwhile; ?>
+        </div>  
+    
         
     </div>
     <div id="divButt">
-        <input type="submit" value="ANNULER" id="annulation" name="BTNSS">
-        <input type="submit" value="CONTINUER" id="confirmation" name="BTNIns">
+        <input type="submit" value="RETOUR" id="annulation" name="BTNSS">
+        <input type="submit" value="CONTINUER >" id="confirmation" name="BTNIns2">
     </div>
     <div class="blank"></div>
+    </form>
+    <!-- Partie traitement  -->
+    <?php
+        $IdBrikoleur = $_SESSION['id_Brikoleur_inscription'];
+        //echo $IdBrikoleur;
+        if(isset($_POST['BTNIns2'])){
+            $Profession = $_POST['radio'];
+            $SProfession = $_POST['check'];
+            $count = 0;
+            if(isset($Profession)){
+                $reqP = "INSERT INTO association_2 VALUES ({$Profession},{$IdBrikoleur}) ";
+                if(count($SProfession)>0){
+                    $reqSP = "INSERT INTO bricoleur_sous_profession VALUES ";
+                    $count = 0;
+                    foreach ( $SProfession as $value ) {
+                        if($count > 0)
+                            $reqSP .= ",";
+                        $reqSP .= "({$value},{$IdBrikoleur})";
+                        $count++;
+                    }
+                    
+                    $resSP = mysqli_query($conn, $reqSP);
+                    //echo($reqSP) ;
+                }
+                $resP = mysqli_query($conn, $reqP);
+                
+            }
+            // header('Location:UploadProfile.php');
+            
+            echo '<script>window.location.href = "UploadProfile.php"; </script>';
+        }
+    ?>
 
     <?php
         include 'footer.php';
     ?>
+        <script>
+            Radio = document.getElementsByClassName("Radio");
+            CheckBox = document.getElementsByClassName("Check");
+            tableau_SP = [];
+            for (let i = 0; i < Radio.length; i++) {
+                CheckBox[i].style = "display:none";
+            }
+            for (let i = 0; i < Radio.length; i++) {
+                Radio[i].addEventListener('click', (e) => {
+                    for (j = 0; j < Radio.length; j++) {
+                        Radio[j].checked = false;
+                    }
+                    Radio[i].checked = true;
+                    console.log(Radio[i].value);
+                    if (e.currentTarget.checked) {
+                        for (k = 0; k < CheckBox.length; k++) {
+                            CheckBox[k].checked = false;
+                            CheckBox[k].style = "display:none";
+                            if (CheckBox[k].parentElement == e.target.parentElement
+                                .parentElement) {
+                                CheckBox[k].style = "display:block";
+                            }    
+                        }
+                    }
+                });
+            } 
+        </script>
     
 </body>
 </html>

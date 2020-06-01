@@ -19,7 +19,7 @@
             }
         if(isset($_POST['BTNVal']))
         {
-            //echo $_SESSION['id_Brikoleur_inscription'];
+            echo $_SESSION['id_Brikoleur_inscription'];
             $id_brik = $_SESSION['id_Brikoleur_inscription'];
             $_SESSION['idBrikoleur'] = $id_brik;
             $bio = $_POST['Bio'];
@@ -33,12 +33,10 @@
             $resSP = mysqli_query($conn, $req);
             if($bio != ""){
                 $reqBio = "UPDATE bricoleur SET `description` = '.$bio' WHERE `bricoleur`.`id_bricoleur` = '$id_brik' ";
-            }   
+            }
             $resSP = mysqli_query($conn, $reqBio);
-            //echo '<script>window.location.href = "ProfilBrikoleur.php"; </script>';
-            //header('Location:ProfilBrikoleur.php');
+            // echo '<script>window.location.href = "ProfilBrikoleur.php"; </script>';
         }
-        
         
     ?>
     <div id="conteneurUProfil">
