@@ -93,3 +93,25 @@ function getSousProfessionName($sousProfessionId)
     $req->fetch();
     return $sousProfessionName;
 }
+// 
+function getProfileImage($bricoleurId)
+{
+    include 'Connection.php';
+    // 
+    $req = "SELECT `refrence_image` FROM `image` WHERE `id_bricoleur` = $bricoleurId  AND `type_image` = 'profile' LIMIT 1";
+    $res = $con->query($req);
+    return $res->fetch_assoc();
+}
+// 
+function getBricoleurProfession($bricoleurId)
+{
+    include 'Connection.php';
+    // 
+    $req = "SELECT `id_profession` FROM `association_2` WHERE `id_bricoleur` = $bricoleurId";
+    $res = $con->query($req);
+    $res = $res->fetch_assoc();
+    if ($res != "") {
+        $idProfession = $res["id_profession"];
+        return getProfessionName($idProfession);
+    } else return "unknown";
+}

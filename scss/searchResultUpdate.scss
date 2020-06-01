@@ -1,0 +1,92 @@
+.optionTitle,
+.optionValue {
+    color: #2D2D2D;
+    font-style: normal;
+}
+
+.optionTitle {
+    background-color: #e9e9e9;
+    font-weight: bold;
+}
+
+.ProfileFound_U {
+    height: 184px;
+
+    .PictureProfile_U {
+        border-radius: 0;
+        width: 174px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 12px 14px;
+        box-sizing: border-box;
+        margin: 0;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .profile_infos {
+        margin-top: 34px;
+        margin-left: 17px;
+        display: flex;
+        flex-direction: column;
+
+        .profile_name {
+            font-family: 'Roboto', sans-serif;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 28px;
+            color: #2D2D2D;
+        }
+
+        .profile_details {
+            span {
+                user-select: none;
+                padding: 1px 6px;
+                font-family: Roboto;
+                font-style: italic;
+                font-weight: normal;
+                font-size: 12px;
+                background: #FDFDFD;
+                border: 1px solid #E9E9E9;
+                border-radius: 15px;
+                color: #868686;
+                text-align: center;
+
+                &:not(:last-of-type) {
+                    margin-right: 5px;
+                }
+
+                &:nth-child(1) {
+                    border-color: #FFC000;
+                    color: #FFC000;
+                }
+            }
+        }
+    }
+
+    .profile_location {
+        margin: 0;
+        margin-top: 8px;
+        display: flex;
+        align-items: center;
+
+        svg {}
+
+        span {
+            margin-left: 5px;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 15px;
+            line-height: 18px;
+            color: #FFC000;
+        }
+    }
+}

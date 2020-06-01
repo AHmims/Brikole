@@ -40,7 +40,7 @@ if (document.getElementsByClassName('ProfileFound')) {
                 document.cookie = `historique=${JSON.stringify(coockieData)}; expires=Wed, 25 May 2030 12:00:00 UTC;path=/`;
             }
             // 
-            // window.location.href = profiles[i].getAttribute('data-href');
+            window.location.href = profiles[i].getAttribute('data-href');
         });
     }
 }
