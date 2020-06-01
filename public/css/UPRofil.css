@@ -1,0 +1,270 @@
+#conteneurUProfil {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  margin-top: 90px;
+  width: 40%;
+  height: auto;
+}
+
+#conteneurUProfil img {
+  width: 90px;
+  height: 90px;
+  display: block;
+}
+
+#conteneurUProfil #parag {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  color: #2D2D2D;
+  text-align: start;
+}
+
+#conteneurUProfil #ZoneImgBio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 90%;
+  height: auto;
+}
+
+#conteneurUProfil #ZoneImgBio #left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
+}
+
+#conteneurUProfil #ZoneImgBio #left #left_img_file {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#conteneurUProfil #ZoneImgBio #left #left_img_file img {
+  width: 180px;
+  height: auto;
+  margin: 0 auto;
+}
+
+#conteneurUProfil #ZoneImgBio #left #left_img_file .button-wrapper {
+  position: relative;
+  width: auto;
+  text-align: center;
+  margin: auto 15px;
+}
+
+#conteneurUProfil #ZoneImgBio #left #left_img_file .button-wrapper span.label {
+  margin-left: 40px;
+  position: relative;
+  z-index: 0;
+  display: inline-block;
+  width: 100%;
+  background: #FFC000;
+  cursor: pointer;
+  color: #fff;
+  padding: 10px 10px;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-family: 'Roboto', sans-serif;
+}
+
+#conteneurUProfil #ZoneImgBio #left #left_img_file #upload {
+  display: inline-block;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 50px;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+#conteneurUProfil #ZoneImgBio #right {
+  margin: 0 auto;
+  width: 100%;
+}
+
+#conteneurUProfil #ZoneImgBio #right .ui-input-container {
+  background-color: #fff;
+  width: 100%;
+  border-radius: 5px;
+  margin: 0 20px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+#conteneurUProfil #ZoneImgBio #right .ui-form-input-container {
+  position: relative;
+  font-size: 1rem;
+  margin-bottom: 15px;
+  display: block;
+}
+
+#conteneurUProfil #ZoneImgBio #right .ui-form-input {
+  padding: 13px 15px;
+  border-radius: 8px;
+  border: 2px solid #FFC000;
+  outline: 0;
+  width: 100%;
+}
+
+#conteneurUProfil #ZoneImgBio #right .form-input-label {
+  position: absolute;
+  top: -7px;
+  left: 10px;
+  color: #868686;
+  font-size: 19px;
+  font-family: 'Roboto', sans-serif;
+  padding-right: 0.33rem;
+  padding-left: 0.33rem;
+  background: #fff;
+  -webkit-transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+  font-family: sans-serif;
+  text-transform: capitalize;
+}
+
+#conteneurUProfil #ZoneImgBio #right textarea {
+  min-height: 9em;
+  max-height: 70vh;
+  width: 100%;
+}
+
+#conteneurUProfil #divButt {
+  width: 100%;
+  height: 50px;
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#conteneurUProfil #divButt #annulation {
+  width: 250px;
+  height: 50px;
+  font-family: 'Roboto', sans-serif;
+  color: #868686;
+  background: #F4F4F4;
+  border: 1px solid #E9E9E9;
+  border-bottom: 3px solid #E9E9E9;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 0.02em;
+  font-style: normal;
+}
+
+@media screen and (max-width: 768px) {
+  #conteneurUProfil #divButt #annulation {
+    width: 190px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  #conteneurUProfil #divButt #annulation {
+    width: 175px;
+  }
+}
+
+#conteneurUProfil #divButt #confirmation {
+  color: white;
+  width: 250px;
+  height: 50px;
+  margin-left: 10px;
+  font-family: 'Roboto', sans-serif;
+  background: #FFC000;
+  border: 1px solid #F0B500;
+  border-bottom: 3px solid #F0B500;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 0.02em;
+  font-style: normal;
+}
+
+@media screen and (max-width: 768px) {
+  #conteneurUProfil #divButt #confirmation {
+    width: 190px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  #conteneurUProfil #divButt #confirmation {
+    width: 175px;
+  }
+}
+
+#footerCont {
+  margin-top: 70px;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+}
+
+@media screen and (max-width: 1024px) {
+  #footerCont {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 425) {
+  #footerCont {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 425) {
+  #footerCont .mobileItem {
+    width: 80px;
+  }
+}
+/*# sourceMappingURL=UPRofil.css.map */

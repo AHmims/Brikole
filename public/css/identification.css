@@ -45,7 +45,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 50px;
   width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -108,6 +107,7 @@ body {
   font-weight: 500;
   font-size: 18px;
   letter-spacing: 0.02em;
+  font-style: normal;
 }
 
 #conteneurIdent .divInput #divButt #confirmation {
@@ -123,10 +123,12 @@ body {
   font-weight: 500;
   font-size: 18px;
   letter-spacing: 0.02em;
+  font-style: normal;
 }
 
 #conteneurIdent #ligne1 {
-  margin-top: 123px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 #conteneurIdent #parag2 {
@@ -136,6 +138,7 @@ body {
   font-size: 16px;
   line-height: 19px;
   color: #535353;
+  margin: 0;
 }
 
 #conteneurIdent #parag2 span {

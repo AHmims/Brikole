@@ -1,4 +1,5 @@
 <?php
+     session_start();
     // Create connection
     $conn = new mysqli("localhost", "root", "", "bd_brikole");  
     if ($conn->connect_error) {
@@ -22,9 +23,15 @@
                 $res = mysqli_query($conn, $reg);
                 $rows = mysqli_num_rows($res);
                 if($rows==0) {
-                $req = "INSERT INTO `bricoleur`(`prenom`, `nom`, `telephone`, `lieu`, `Email`, `MP`) VALUES ('$Prenom','$Nom','$Num','$Lieu','$Email','$Pass')";
-                $res = mysqli_query($conn, $req);
-                die('<script>alert("Inscription Bien fait !!")</script>');
+                    $req = "INSERT INTO `bricoleur`(`prenom`, `nom`, `telephone`, `lieu`, `Email`, `MP`) VALUES ('$Prenom','$Nom','$Num','$Lieu','$Email','$Pass')";
+                    $res = mysqli_query($conn, $req);
+                    $sqlmax  = "SELECT Max(id_bricoleur) as num from bricoleur";
+                    $res2 = mysqli_query($conn, $sqlmax);
+                    $ligne = mysqli_fetch_assoc($res2);
+                    $_SESSION['id_Brikoleur_inscription']=$ligne["num"];
+                    echo '<script>alert("'.$_SESSION['id_Brikoleur_inscription'].'")</script>';
+                    // header('Location:PR.php');
+                    //die('<script>window("Inscription Bien fait !!")</script>');
                 }
                 else echo '<script>alert("Email est déjà Existant")</script>';
             }
@@ -81,10 +88,10 @@
                     </div>
                     <div id="divButt">
                         <input type="submit" value="ANNULER" id="annulation" name="BTNSS">
-                        <input type="submit" value="CONTINUER" id="confirmation" name="BTNIns">
+                        <input type="submit" value="CONTINUER >" id="confirmation" name="BTNIns">
                     </div>
                 </div>
-                <div id="ligne" style="margin-top:390px">
+                <div id="ligne">
                     <svg  width="414" height="16" viewBox="0 0 414 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect x="207" y="3.75732" width="6" height="6" transform="rotate(45 207 3.75732)" fill="#E9E9E9" />
                         <path d="M199.707 8L207 0.707107L214.293 8L207 15.2929L199.707 8Z" stroke="#E9E9E9" />
